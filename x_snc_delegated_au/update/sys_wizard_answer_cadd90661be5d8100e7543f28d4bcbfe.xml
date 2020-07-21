@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New DALs</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>DALs</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">6f248987db011010819f62dc139619a0</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:18:59</sys_created_on>
+        <sys_id>cadd90661be5d8100e7543f28d4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DALs</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_wizard_answer_cadd90661be5d8100e7543f28d4bcbfe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:18:59</sys_updated_on>
+        <table/>
+        <target_url>x_snc_delegated_au_dals.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

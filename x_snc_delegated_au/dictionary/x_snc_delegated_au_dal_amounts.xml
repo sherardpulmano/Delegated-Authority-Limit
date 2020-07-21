@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="DAL Amounts" max_length="40" name="x_snc_delegated_au_dal_amounts" sizeclass="5" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;return current.getDisplayValue('limit_amount');&#13;&#10;&#13;&#10;})(current);" display="true" label="Display Name" max_length="40" name="display_name" type="string"/>
+        <element attributes="omit_sys_original=true" label="Limit Amount" max_length="20" name="limit_amount" type="currency"/>
+    </element>
+</database>

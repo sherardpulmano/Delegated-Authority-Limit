@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>62d4fa0edb0e14d0819f62dc13961954</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-07-20 14:37:19</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('service_offering');
+{
+if(gr.get('5cf56f8cdbc7ff408606f2131f961918')) {
+ gr.setValue('offering_cost','13000');
+}
+gr.update();
+
+if(gr.get('60f42b4cdbc7ff408606f2131f961967')) {
+ gr.setValue('offering_cost','106000');
+}
+gr.update();
+
+if(gr.get('87b52f8cdbc7ff408606f2131f96194c')) {
+ gr.setValue('offering_cost','230000');
+}
+gr.update();
+
+if(gr.get('9efcccaddb32f340ac0a9ee6db96197f')) {
+ gr.setValue('offering_cost','17700');
+}
+gr.update();
+}
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 14:37:19</sys_created_on>
+        <sys_id>5f22757edb8218d0819f62dc13961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>62d4fa0edb0e14d0819f62dc13961954</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_5f22757edb8218d0819f62dc13961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 14:37:19</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

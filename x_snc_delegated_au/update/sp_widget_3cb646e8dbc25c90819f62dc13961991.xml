@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope,$rootScope) {
+	var c = this;
+	c.data.total_amount = 0;
+	var totalAmount = 0;
+	//Listener to find "field" (read: variable) changes on a catalog item
+	$rootScope.$on("field.change", function(evt, parms) {
+		console.log(parms.field);
+		//limit the listener to: if the MRVS or a variable that sits straight on the catalog item changes
+		if(parms.field.variable_name == 'IO:b625a14b1b3dd0900e7543f28d4bcbd1') {						
+			//parse the MRVS
+			var partnerResources = tryParse($scope.page.g_form.getValue('authorities'));
+			//if the catalog item variable (not a part of the MRVS) is empty, use 0, otherwise, use that value
+			//if the MRVS has data in it
+			if (partnerResources) {
+				//loop through and sum up totals
+				//console.log(partnerResources.length);
+				//for(var i = 0; i < partnerResources.length; i++) {
+					console.log(parms.field.displayValue.replace(/[\$,]/g,''));
+					totalAmount = parseFloat(parms.field.displayValue.replace(/[\$,]/g,''));
+					totalAmount += mrvsIteration(partnerResources,'u_requestor_amounts');	
+		
+				//}
+			}
+			//This is what will print to a particular field if you want to do that instead of printing in HTML
+			$scope.page.g_form.setValue('total_authority_request_amount', totalAmount);
+		}
+	});
+	
+	function mrvsIteration(mrvs,variable) {
+		var total = 0;
+		console.log(mrvs);
+		for(var i = 0; i < mrvs.length; i++) {
+			var id = mrvs[i][variable];
+			var amount = 0;
+			switch(id){
+				case '3aee58e61be5d8100e7543f28d4bcba1':
+					amount = 1000000; 
+					break;
+				case '60ee18e61be5d8100e7543f28d4bcbde':
+					amount = 500000; 
+					break;
+				case '06de18e61be5d8100e7543f28d4bcb30':
+					amount = 100000;
+					break;
+				case '17ce54e61be5d8100e7543f28d4bcbde':
+					amount = 50000;
+					break;
+				case '8abe94e61be5d8100e7543f28d4bcbbc':
+					amount = 10000;
+					break;
+			}
+			total += amount;		
+			
+		}
+		
+		return parseFloat(total);
+	}
+	
+	function tryParse(val) {
+		try {
+			return JSON.parse(val);
+		} 
+		catch (exc) {
+			return {};	
+		}
+	}
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>request_amount_total</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Request Amount Total</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-13 16:20:40</sys_created_on>
+        <sys_id>3cb646e8dbc25c90819f62dc13961991</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>Request Amount Total</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sp_widget_3cb646e8dbc25c90819f62dc13961991</sys_update_name>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-17 19:46:39</sys_updated_on>
+        <template><![CDATA[<div><!-- your widget template --></div>]]></template>
+    </sp_widget>
+</record_update>

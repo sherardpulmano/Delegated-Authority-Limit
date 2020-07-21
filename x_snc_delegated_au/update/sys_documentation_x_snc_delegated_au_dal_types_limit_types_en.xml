@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="limit_types" label="Limit Types" language="en" table="x_snc_delegated_au_dal_types">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>limit_types</element>
+            <help/>
+            <hint/>
+            <label>Limit Types</label>
+            <language>en</language>
+            <name>x_snc_delegated_au_dal_types</name>
+            <plural>Limit Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-24 17:09:28</sys_created_on>
+            <sys_id>e2ab98a21be5d8100e7543f28d4bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Limit Types</sys_name>
+            <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_delegated_au_dal_types_limit_types_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-24 17:09:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

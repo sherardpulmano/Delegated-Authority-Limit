@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="DAL Types" language="en" table="x_snc_delegated_au_dal_types">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>DAL Types</label>
+            <language>en</language>
+            <name>x_snc_delegated_au_dal_types</name>
+            <plural>DAL Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-24 17:09:26</sys_created_on>
+            <sys_id>ceab58a21be5d8100e7543f28d4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DAL Types</sys_name>
+            <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_delegated_au_dal_types__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-24 17:09:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

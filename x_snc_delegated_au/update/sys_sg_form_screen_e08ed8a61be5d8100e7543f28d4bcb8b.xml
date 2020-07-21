@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <available_offline>true</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <fetch_type>not_required</fetch_type>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="icon-Check-Circle">288ed8a61be5d8100e7543f28d4bcb85</icon>
+        <item_view display_value="DAL Types Detail Screen Item View">608ed8a61be5d8100e7543f28d4bcb8a</item_view>
+        <name>DAL Types Form Screen</name>
+        <roles_override/>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:21:53</sys_created_on>
+        <sys_id>e08ed8a61be5d8100e7543f28d4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DAL Types Form Screen</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_sg_form_screen_e08ed8a61be5d8100e7543f28d4bcb8b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:21:53</sys_updated_on>
+        <table>x_snc_delegated_au_dal_types</table>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=e08ed8a61be5d8100e7543f28d4bcb8b"/>
+</record_update>

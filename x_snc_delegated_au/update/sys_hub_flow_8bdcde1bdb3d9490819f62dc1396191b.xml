@@ -1,0 +1,3358 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch4-05-20-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>manager_approval_and_email_dal</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger➛DALs Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_delegated_au_dals","column_name":"sys_id"},{"name":"Created_1.current.u_requestor_manager.first_name","label":"Trigger➛DALs Record➛Manager➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_requestor_manager.email","label":"Trigger➛DALs Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"2f72e645-b844-40e7-b61e-59f04e63d229.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager","label":"Trigger➛DALs Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_delegated_au_dals","column_name":"u_requestor_manager"},{"name":"Created_1.current","label":"Trigger➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"a8a6d34c-0a98-492d-94e2-d09837b43585.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0287030c-fc15-472f-b671-320ceead66a9.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.2a1f39b7db21d3000d389875db96193b}}","label":"Lynn Reed","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"c67385df-2bf2-4d20-aa07-f98b3931bbc9.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor.email","label":"Trigger➛DALs Record➛Requestor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_requestor.first_name","label":"Trigger➛DALs Record➛Requestor➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.record","label":"2➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.table_name","label":"2➛DALs Table","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager.name","label":"Trigger➛DALs Record➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>e2bec30bdbce58d0819f62dc1396196f</latest_snapshot>
+        <master_snapshot>fe52e653db7d9490819f62dc13961973</master_snapshot>
+        <name>Manager Approval and Email DAL</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>db522a53db7d9490819f62dc13961910</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:45:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bdcde1bdb3d9490819f62dc1396191b</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Manager Approval and Email DAL</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_hub_flow_8bdcde1bdb3d9490819f62dc1396191b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:18</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=8bdcde1bdb3d9490819f62dc1396191b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8bdcde1bdb3d9490819f62dc1396191b"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_delegated_au_dals">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db522a53db7d9490819f62dc13961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:07</sys_updated_on>
+        <table>x_snc_delegated_au_dals</table>
+    </sys_flow_record_trigger>
+    <sys_hub_flow_component action="delete_multiple" query="flow=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN041f3ee3dbf11890819f62dc139619f5,081f3ee3dbf11890819f62dc139619ee,9152a653db7d9490819f62dc139619d0,c65ed7f4db8e9c90819f62dc139619aa,ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>041f3ee3dbf11890819f62dc139619f5</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=041f3ee3dbf11890819f62dc139619f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>041f3ee3dbf11890819f62dc139619f5</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>481f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>Your DAL Has Been Approved!</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>041f3ee3dbf11890819f62dc139619f5</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>841f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=041f3ee3dbf11890819f62dc139619f5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>041f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;Trigger➛DALs Record➛Requestor➛First name&lt;button id="transform_function_facade_9861687b-717d-41a9-b10b-4e73cbc4b022" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Good News! Your DAL Request has been approved. Please click the link below to see the status&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;a href="sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=ff9af2a71b7994900e7543f28d4bcbff"&gt;https://spulmdemo.service-now.com/sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;Trigger➛DALs Record➛Sys ID&lt;button id="transform_function_facade_d3176927-1d1f-478a-8ce8-44b4ba752162" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>401f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>8c1f3ee3dbf11890819f62dc139619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>{{Created_1.current.u_requestor.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619ee</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=081f3ee3dbf11890819f62dc139619ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>0c1f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>481f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>4c1f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>841f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=081f3ee3dbf11890819f62dc139619ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{static.2a1f39b7db21d3000d389875db96193b}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>441f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>cc1f3ee3dbf11890819f62dc139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>801f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>c81f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9152a653db7d9490819f62dc139619d0</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9152a653db7d9490819f62dc139619d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>1552a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>5d52a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9952a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>d552a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9152a653db7d9490819f62dc139619d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>dd52a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{Created_1.current.u_requestor_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>dd52a653db7d9490819f62dc139619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>1d52a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9552a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>5952a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9152a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:03</sys_created_on>
+        <sys_id>c65ed7f4db8e9c90819f62dc139619aa</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c65ed7f4db8e9c90819f62dc139619aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c65ed7f4db8e9c90819f62dc139619aa</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>825ed7f4db8e9c90819f62dc139619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c65ed7f4db8e9c90819f62dc139619aa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>4e5ed7f4db8e9c90819f62dc139619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>865ed7f4db8e9c90819f62dc139619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>025ed7f4db8e9c90819f62dc139619ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:32:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=Approved by {{Created_1.current.u_requestor_manager.name}}^assignment_group={"display":"Audit Administrators","value":"ef45373213a0120061fdb3173244b0a8"}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>ce5ed7f4db8e9c90819f62dc139619d6</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ce5ed7f4db8e9c90819f62dc139619d6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>0a5ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>comments_and_work_notes=Approved by Amanda</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ce5ed7f4db8e9c90819f62dc139619d6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>ca5ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>c25ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>025ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>865ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN312d1e5bdb3d9490819f62dc1396196a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:21</sys_created_on>
+        <sys_id>312d1e5bdb3d9490819f62dc1396196a</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:17</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=312d1e5bdb3d9490819f62dc1396196a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>312d1e5bdb3d9490819f62dc1396196a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:58</sys_created_on>
+        <sys_id>9d52a653db7d9490819f62dc139619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:58</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>312d1e5bdb3d9490819f62dc1396196a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:21</sys_created_on>
+        <sys_id>f12d1e5bdb3d9490819f62dc1396196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 20:46:21</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN8fdc965bdb3d9490819f62dc1396194f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8bdcde1bdb3d9490819f62dc1396191b</id>
+        <name>Manager Approval and Email DAL</name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:45:04</sys_created_on>
+        <sys_id>8fdc965bdb3d9490819f62dc1396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 20:45:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT INa52d965bdb3d9490819f62dc139619f4,b92d1e5bdb3d9490819f62dc13961962"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</model>
+        <model_id>8bdcde1bdb3d9490819f62dc1396191b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8bdcde1bdb3d9490819f62dc1396191b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:20</sys_created_on>
+        <sys_id>a52d965bdb3d9490819f62dc139619f4</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</model>
+        <model_id>8bdcde1bdb3d9490819f62dc1396191b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8bdcde1bdb3d9490819f62dc1396191b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:20</sys_created_on>
+        <sys_id>b92d1e5bdb3d9490819f62dc13961962</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN041f3ee3dbf11890819f62dc139619f5,081f3ee3dbf11890819f62dc139619ee,9152a653db7d9490819f62dc139619d0,c65ed7f4db8e9c90819f62dc139619aa,ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>041f3ee3dbf11890819f62dc139619f5</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=041f3ee3dbf11890819f62dc139619f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>041f3ee3dbf11890819f62dc139619f5</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>481f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>Your DAL Has Been Approved!</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>041f3ee3dbf11890819f62dc139619f5</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>841f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=041f3ee3dbf11890819f62dc139619f5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>041f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;Trigger➛DALs Record➛Requestor➛First name&lt;button id="transform_function_facade_9861687b-717d-41a9-b10b-4e73cbc4b022" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Good News! Your DAL Request has been approved. Please click the link below to see the status&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;a href="sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=ff9af2a71b7994900e7543f28d4bcbff"&gt;https://spulmdemo.service-now.com/sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;Trigger➛DALs Record➛Sys ID&lt;button id="transform_function_facade_d3176927-1d1f-478a-8ce8-44b4ba752162" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>401f3ee3dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>041f3ee3dbf11890819f62dc139619f5</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>8c1f3ee3dbf11890819f62dc139619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>{{Created_1.current.u_requestor.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619ee</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=081f3ee3dbf11890819f62dc139619ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>0c1f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>481f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>4c1f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>081f3ee3dbf11890819f62dc139619ee</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>841f3ee3dbf11890819f62dc139619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=081f3ee3dbf11890819f62dc139619ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{static.2a1f39b7db21d3000d389875db96193b}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>081f3ee3dbf11890819f62dc139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>441f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>cc1f3ee3dbf11890819f62dc139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>801f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>081f3ee3dbf11890819f62dc139619ee</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:52:59</sys_created_on>
+        <sys_id>c81f3ee3dbf11890819f62dc139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9152a653db7d9490819f62dc139619d0</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9152a653db7d9490819f62dc139619d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>1552a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>5d52a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9952a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9152a653db7d9490819f62dc139619d0</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>d552a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9152a653db7d9490819f62dc139619d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>dd52a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{Created_1.current.u_requestor_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>dd52a653db7d9490819f62dc139619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>1d52a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9552a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>5952a653db7d9490819f62dc139619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9152a653db7d9490819f62dc139619d0</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>9152a653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:08:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:03</sys_created_on>
+        <sys_id>c65ed7f4db8e9c90819f62dc139619aa</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c65ed7f4db8e9c90819f62dc139619aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c65ed7f4db8e9c90819f62dc139619aa</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>825ed7f4db8e9c90819f62dc139619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c65ed7f4db8e9c90819f62dc139619aa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>4e5ed7f4db8e9c90819f62dc139619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>865ed7f4db8e9c90819f62dc139619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c65ed7f4db8e9c90819f62dc139619aa</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>025ed7f4db8e9c90819f62dc139619ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:32:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=Approved by {{Created_1.current.u_requestor_manager.name}}^assignment_group={"display":"Audit Administrators","value":"ef45373213a0120061fdb3173244b0a8"}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>ce5ed7f4db8e9c90819f62dc139619d6</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>Amanda.Wu</sys_updated_by>
+        <sys_updated_on>2020-07-21 16:00:14</sys_updated_on>
+        <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ce5ed7f4db8e9c90819f62dc139619d6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>0a5ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>comments_and_work_notes=Approved by Amanda</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ce5ed7f4db8e9c90819f62dc139619d6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>ca5ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce5ed7f4db8e9c90819f62dc139619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>c25ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>025ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ce5ed7f4db8e9c90819f62dc139619d6</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:04</sys_created_on>
+        <sys_id>865ed7f4db8e9c90819f62dc139619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN20e38fbedb8a18d0819f62dc1396191c,6ce38fbedb8a18d0819f62dc1396191b,a4e38fbedb8a18d0819f62dc1396191b,e0e38fbedb8a18d0819f62dc1396191c"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8bdcde1bdb3d9490819f62dc1396191b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 20:34:18</sys_created_on>
+        <sys_id>20e38fbedb8a18d0819f62dc1396191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8bdcde1bdb3d9490819f62dc1396191b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 20:34:17</sys_created_on>
+        <sys_id>6ce38fbedb8a18d0819f62dc1396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8bdcde1bdb3d9490819f62dc1396191b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 20:34:17</sys_created_on>
+        <sys_id>a4e38fbedb8a18d0819f62dc1396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d3176927-1d1f-478a-8ce8-44b4ba752162</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>8bdcde1bdb3d9490819f62dc1396191b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 20:34:18</sys_created_on>
+        <sys_id>e0e38fbedb8a18d0819f62dc1396191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9861687b-717d-41a9-b10b-4e73cbc4b022</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN752d965bdb3d9490819f62dc139619fc,fd2d1e5bdb3d9490819f62dc13961966"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8bdcde1bdb3d9490819f62dc1396191b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:20</sys_created_on>
+        <sys_id>752d965bdb3d9490819f62dc139619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 20:46:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8bdcde1bdb3d9490819f62dc1396191b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 20:46:20</sys_created_on>
+        <sys_id>fd2d1e5bdb3d9490819f62dc13961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 20:46:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8bdcde1bdb3d9490819f62dc1396191b^sys_idNOT IN1b522a53db7d9490819f62dc13961911"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1b522a53db7d9490819f62dc13961911","name":"plan"}}</plan>
+        <plan_id>8bdcde1bdb3d9490819f62dc1396191b</plan_id>
+        <snapshot>e2bec30bdbce58d0819f62dc1396196f</snapshot>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b522a53db7d9490819f62dc13961911</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:16</sys_updated_on>
+        <trigger display_value="">db522a53db7d9490819f62dc13961910</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>manager_approval_and_email_dal</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger➛DALs Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_delegated_au_dals","column_name":"sys_id"},{"name":"Created_1.current.u_requestor_manager.first_name","label":"Trigger➛DALs Record➛Manager➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_requestor_manager.email","label":"Trigger➛DALs Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"2f72e645-b844-40e7-b61e-59f04e63d229.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager","label":"Trigger➛DALs Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_delegated_au_dals","column_name":"u_requestor_manager"},{"name":"Created_1.current","label":"Trigger➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"a8a6d34c-0a98-492d-94e2-d09837b43585.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0287030c-fc15-472f-b671-320ceead66a9.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.2a1f39b7db21d3000d389875db96193b}}","label":"Lynn Reed","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"c67385df-2bf2-4d20-aa07-f98b3931bbc9.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor.email","label":"Trigger➛DALs Record➛Requestor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_requestor.first_name","label":"Trigger➛DALs Record➛Requestor➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.record","label":"2➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.table_name","label":"2➛DALs Table","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager.name","label":"Trigger➛DALs Record➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Manager Approval and Email DAL</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Manager Approval and Email DAL">8bdcde1bdb3d9490819f62dc1396191b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe52e653db7d9490819f62dc13961973</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe52e653db7d9490819f62dc13961973"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fe52e653db7d9490819f62dc13961973"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=fe52e653db7d9490819f62dc13961973^sys_idNOT IN246e5bf4db8e9c90819f62dc1396198c,2c6e5bf4db8e9c90819f62dc13961991,2e1fbee3dbf11890819f62dc13961981,4b52e653db7d9490819f62dc139619cb,661fbee3dbf11890819f62dc139619a1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>246e5bf4db8e9c90819f62dc1396198c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=246e5bf4db8e9c90819f62dc1396198c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>246e5bf4db8e9c90819f62dc1396198c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>6c6e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=246e5bf4db8e9c90819f62dc1396198c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>286e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>646e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>e86e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=Approved by {{Created_1.current.u_requestor_manager.name}}^assignment_group={"display":"Audit Administrators","value":"ef45373213a0120061fdb3173244b0a8"}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>2c6e5bf4db8e9c90819f62dc13961991</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c6e5bf4db8e9c90819f62dc13961991"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c6e5bf4db8e9c90819f62dc13961991</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>286e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c6e5bf4db8e9c90819f62dc13961991</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>646e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>comments_and_work_notes=Approved by Amanda</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2c6e5bf4db8e9c90819f62dc13961991"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>206e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>6c6e5bf4db8e9c90819f62dc13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>e06e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:09</sys_created_on>
+        <sys_id>2e1fbee3dbf11890819f62dc13961981</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e1fbee3dbf11890819f62dc13961981"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>2a1fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>a21fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>ea1fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e1fbee3dbf11890819f62dc13961981"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>6e1fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{static.2a1f39b7db21d3000d389875db96193b}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:09</sys_created_on>
+        <sys_id>621fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>aa1fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>261fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>e61fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>221fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4b52e653db7d9490819f62dc139619cb</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b52e653db7d9490819f62dc139619cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0752e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4352e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8b52e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>c752e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4b52e653db7d9490819f62dc139619cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0f52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{Created_1.current.u_requestor_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0352e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4b52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>c352e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8752e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>cf52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc139619a1</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=661fbee3dbf11890819f62dc139619a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>661fbee3dbf11890819f62dc139619a1</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>Your DAL Has Been Approved!</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>661fbee3dbf11890819f62dc139619a1</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>a21fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=661fbee3dbf11890819f62dc139619a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>221fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;Trigger➛DALs Record➛Requestor➛First name&lt;button id="transform_function_facade_9861687b-717d-41a9-b10b-4e73cbc4b022" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Good News! Your DAL Request has been approved. Please click the link below to see the status&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;a href="sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=ff9af2a71b7994900e7543f28d4bcbff"&gt;https://spulmdemo.service-now.com/sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;Trigger➛DALs Record➛Sys ID&lt;button id="transform_function_facade_d3176927-1d1f-478a-8ce8-44b4ba752162" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>6e1fbee3dbf11890819f62dc139619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>aa1fbee3dbf11890819f62dc139619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>{{Created_1.current.u_requestor.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fe52e653db7d9490819f62dc13961973^sys_idNOT IN0b52e653db7d9490819f62dc139619d4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0b52e653db7d9490819f62dc139619d4</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:16</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0b52e653db7d9490819f62dc139619d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0b52e653db7d9490819f62dc139619d4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8752e653db7d9490819f62dc139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0b52e653db7d9490819f62dc139619d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>c352e653db7d9490819f62dc139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fe52e653db7d9490819f62dc13961973^sys_idNOT IN3652e653db7d9490819f62dc13961975"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fe52e653db7d9490819f62dc13961973</id>
+        <name>Manager Approval and Email DAL</name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:05</sys_created_on>
+        <sys_id>3652e653db7d9490819f62dc13961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=fe52e653db7d9490819f62dc13961973^sys_idNOT IN7a52e653db7d9490819f62dc13961976,8f52e653db7d9490819f62dc139619bb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</model>
+        <model_id>fe52e653db7d9490819f62dc13961973</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe52e653db7d9490819f62dc13961973</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:05</sys_created_on>
+        <sys_id>7a52e653db7d9490819f62dc13961976</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</model>
+        <model_id>fe52e653db7d9490819f62dc13961973</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe52e653db7d9490819f62dc13961973</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:05</sys_created_on>
+        <sys_id>8f52e653db7d9490819f62dc139619bb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fe52e653db7d9490819f62dc13961973^sys_idNOT IN246e5bf4db8e9c90819f62dc1396198c,2c6e5bf4db8e9c90819f62dc13961991,2e1fbee3dbf11890819f62dc13961981,4b52e653db7d9490819f62dc139619cb,661fbee3dbf11890819f62dc139619a1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>246e5bf4db8e9c90819f62dc1396198c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=246e5bf4db8e9c90819f62dc1396198c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>246e5bf4db8e9c90819f62dc1396198c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>6c6e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=246e5bf4db8e9c90819f62dc1396198c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>286e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>646e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>246e5bf4db8e9c90819f62dc1396198c</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>e86e5bf4db8e9c90819f62dc1396198d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>comments_and_work_notes=Approved by {{Created_1.current.u_requestor_manager.name}}^assignment_group={"display":"Audit Administrators","value":"ef45373213a0120061fdb3173244b0a8"}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>2c6e5bf4db8e9c90819f62dc13961991</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c6e5bf4db8e9c90819f62dc13961991"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c6e5bf4db8e9c90819f62dc13961991</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>286e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c6e5bf4db8e9c90819f62dc13961991</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>646e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <value>comments_and_work_notes=Approved by Amanda</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2c6e5bf4db8e9c90819f62dc13961991"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>206e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>6c6e5bf4db8e9c90819f62dc13961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2c6e5bf4db8e9c90819f62dc13961991</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:14</sys_created_on>
+        <sys_id>e06e5bf4db8e9c90819f62dc13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:09</sys_created_on>
+        <sys_id>2e1fbee3dbf11890819f62dc13961981</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e1fbee3dbf11890819f62dc13961981"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>2a1fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>a21fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e1fbee3dbf11890819f62dc13961981</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>ea1fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e1fbee3dbf11890819f62dc13961981"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>6e1fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{static.2a1f39b7db21d3000d389875db96193b}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:09</sys_created_on>
+        <sys_id>621fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>aa1fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>261fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>e61fbee3dbf11890819f62dc1396199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2e1fbee3dbf11890819f62dc13961981</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>221fbee3dbf11890819f62dc1396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4b52e653db7d9490819f62dc139619cb</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:14</sys_updated_on>
+        <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b52e653db7d9490819f62dc139619cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0752e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4352e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8b52e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value>x_snc_delegated_au_dals</value>
+        <variable display_value="">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b52e653db7d9490819f62dc139619cb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>c752e653db7d9490819f62dc139619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <value/>
+        <variable display_value="">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4b52e653db7d9490819f62dc139619cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0f52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAllU[{{Created_1.current.u_requestor_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>0352e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4b52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>c352e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8752e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4b52e653db7d9490819f62dc139619cb</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>cf52e653db7d9490819f62dc139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Manager Approval and Email DAL">fe52e653db7d9490819f62dc13961973</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc139619a1</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=661fbee3dbf11890819f62dc139619a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>661fbee3dbf11890819f62dc139619a1</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>661fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value>Your DAL Has Been Approved!</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>661fbee3dbf11890819f62dc139619a1</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>a21fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=661fbee3dbf11890819f62dc139619a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>221fbee3dbf11890819f62dc139619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:9861687b-717d-41a9-b10b-4e73cbc4b022}}"&gt;Trigger➛DALs Record➛Requestor➛First name&lt;button id="transform_function_facade_9861687b-717d-41a9-b10b-4e73cbc4b022" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Good News! Your DAL Request has been approved. Please click the link below to see the status&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;a href="sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=ff9af2a71b7994900e7543f28d4bcbff"&gt;https://spulmdemo.service-now.com/sp?id=ticket&amp;amp;table=x_snc_delegated_au_dals&amp;amp;sys_id=&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d3176927-1d1f-478a-8ce8-44b4ba752162}}"&gt;Trigger➛DALs Record➛Sys ID&lt;button id="transform_function_facade_d3176927-1d1f-478a-8ce8-44b4ba752162" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>6e1fbee3dbf11890819f62dc139619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>661fbee3dbf11890819f62dc139619a1</id>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:10</sys_created_on>
+        <sys_id>aa1fbee3dbf11890819f62dc139619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>{{Created_1.current.u_requestor.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fe52e653db7d9490819f62dc13961973^sys_idNOT IN181f3ee3dbf11890819f62dc139619fa,196e9bf4db8e9c90819f62dc13961910,23bf3667dbf11890819f62dc139619f7,321fbee3dbf11890819f62dc139619c9,4b52e653db7d9490819f62dc139619fb,656e9bf4db8e9c90819f62dc13961911,6bbf3667dbf11890819f62dc139619f6,721fbee3dbf11890819f62dc139619c8,7da32617db7d9490819f62dc13961919,9295e2d7db7d9490819f62dc139619a6,931ffee3dbf11890819f62dc13961956,a152a653db7d9490819f62dc139619dc,a16e9bf4db8e9c90819f62dc13961911,a7bf3667dbf11890819f62dc139619f7,a94326d3db7d9490819f62dc13961999,b5a32617db7d9490819f62dc13961919,cb52e653db7d9490819f62dc139619fb,da95e2d7db7d9490819f62dc139619a5,dc1f3ee3dbf11890819f62dc139619fa,df1ffee3dbf11890819f62dc13961955,e14326d3db7d9490819f62dc13961999,e3bf3667dbf11890819f62dc139619f7,e952a653db7d9490819f62dc139619db,ed6e9bf4db8e9c90819f62dc13961910"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:00</sys_created_on>
+        <sys_id>181f3ee3dbf11890819f62dc139619fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9861687b-717d-41a9-b10b-4e73cbc4b022</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:17</sys_created_on>
+        <sys_id>196e9bf4db8e9c90819f62dc13961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d3176927-1d1f-478a-8ce8-44b4ba752162</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:55:58</sys_created_on>
+        <sys_id>23bf3667dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:11</sys_created_on>
+        <sys_id>321fbee3dbf11890819f62dc139619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9861687b-717d-41a9-b10b-4e73cbc4b022</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>4b52e653db7d9490819f62dc139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:17</sys_created_on>
+        <sys_id>656e9bf4db8e9c90819f62dc13961911</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9861687b-717d-41a9-b10b-4e73cbc4b022</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:55:58</sys_created_on>
+        <sys_id>6bbf3667dbf11890819f62dc139619f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d3176927-1d1f-478a-8ce8-44b4ba752162</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:11</sys_created_on>
+        <sys_id>721fbee3dbf11890819f62dc139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d3176927-1d1f-478a-8ce8-44b4ba752162</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:14:45</sys_created_on>
+        <sys_id>7da32617db7d9490819f62dc13961919</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:23:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:23:15</sys_created_on>
+        <sys_id>9295e2d7db7d9490819f62dc139619a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:13</sys_created_on>
+        <sys_id>931ffee3dbf11890819f62dc13961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>a152a653db7d9490819f62dc139619dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:13:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:17</sys_created_on>
+        <sys_id>a16e9bf4db8e9c90819f62dc13961911</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:55:58</sys_created_on>
+        <sys_id>a7bf3667dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9861687b-717d-41a9-b10b-4e73cbc4b022</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:13:06</sys_created_on>
+        <sys_id>a94326d3db7d9490819f62dc13961999</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:14:45</sys_created_on>
+        <sys_id>b5a32617db7d9490819f62dc13961919</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:23:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>cb52e653db7d9490819f62dc139619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:23:15</sys_created_on>
+        <sys_id>da95e2d7db7d9490819f62dc139619a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:53:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:00</sys_created_on>
+        <sys_id>dc1f3ee3dbf11890819f62dc139619fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d3176927-1d1f-478a-8ce8-44b4ba752162</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:53:13</sys_created_on>
+        <sys_id>df1ffee3dbf11890819f62dc13961955</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-10 17:55:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:13:06</sys_created_on>
+        <sys_id>e14326d3db7d9490819f62dc13961999</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-10 17:55:58</sys_created_on>
+        <sys_id>e3bf3667dbf11890819f62dc139619f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-14 17:22:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>46168b2b-06d9-46b8-bc03-9b81620697be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:08:59</sys_created_on>
+        <sys_id>e952a653db7d9490819f62dc139619db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:13:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fe52e653db7d9490819f62dc13961973</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requestor_manager.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-14 17:22:17</sys_created_on>
+        <sys_id>ed6e9bf4db8e9c90819f62dc13961910</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 20:34:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11d187c-278a-4fd6-9c70-a44f9cac52c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe52e653db7d9490819f62dc13961973^sys_idNOT IN8752e653db7d9490819f62dc139619c1,fa52e653db7d9490819f62dc1396197c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe52e653db7d9490819f62dc13961973</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:06</sys_created_on>
+        <sys_id>8752e653db7d9490819f62dc139619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe52e653db7d9490819f62dc13961973</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-09 21:09:05</sys_created_on>
+        <sys_id>fa52e653db7d9490819f62dc1396197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-09 21:09:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

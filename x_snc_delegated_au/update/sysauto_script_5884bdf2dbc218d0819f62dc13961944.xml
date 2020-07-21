@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>1ed4ba0edb0e14d0819f62dc139619d5</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-07-20 14:47:29</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var vit = new GlideRecord('sn_vul_vulnerable_item');
+vit.addEncodedQuery('vulnerability.idENDSWITHCVE-2019-0785');
+vit.query();
+
+var riskScore = new GlideRecord('x_refui_vr_risk_score');
+riskScore.addEncodedQuery('vulnerability_entry.idSTARTSWITHCVE-2019-0785');
+riskScore.query();
+riskScore.next();
+var rfVulnID = riskScore.getValue('vulnerability_entry');
+
+
+while(vit.next()){
+gs.debug('rfVulnID: '+rfVulnID);
+gs.debug('vitVulnID: '+ vit.getValue('vulnerability'));
+vit.setValue('vulnerability',rfVulnID);
+vit.update();
+
+var securityCalc = new sn_vul.VulnerabilityCalculator(vit, true, true, "sn_vul_calculator_group", "sn_vul_calculator");
+securityCalc.calculate();
+
+}
+
+var rfConnector = new GlideRecord('x_refui_core_integration_connector');
+rfConnector.query();
+
+while(rfConnector.next()){
+	gs.debug('Deleting API Token value from RecordedFuture Integration Connector: '+ rfConnector.getValue('name'));
+	rfConnector.setValue('api_token','');
+	rfConnector.setValue('vr_api_token','');
+	rfConnector.update();
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 14:47:29</sys_created_on>
+        <sys_id>5884bdf2dbc218d0819f62dc13961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1ed4ba0edb0e14d0819f62dc139619d5</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_5884bdf2dbc218d0819f62dc13961944</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 14:47:29</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

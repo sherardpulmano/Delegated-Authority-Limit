@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="cfi_dal_version_number" label="CFI DAL Version Number" language="en" table="x_snc_delegated_au_dals">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>cfi_dal_version_number</element>
+            <help/>
+            <hint/>
+            <label>CFI DAL Version Number</label>
+            <language>en</language>
+            <name>x_snc_delegated_au_dals</name>
+            <plural>CFI DAL Version Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-24 17:19:01</sys_created_on>
+            <sys_id>5addd0661be5d8100e7543f28d4bcb19</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CFI DAL Version Number</sys_name>
+            <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_delegated_au_dals_cfi_dal_version_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-24 17:19:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>12d4ba0edb0e14d0819f62dc139619e1</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-07-20 14:41:13</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[//Matt Train - PA Data Generator load script CORRECTED FROM MR
+var conf = 'HRDIBS';
+var gen = new GlideRecord('x_snc_pa_demo_data_generator');
+gen.addEncodedQuery('configurationLIKE'+conf);
+gen.query();
+while(gen.next()){
+   var genID = gen.getValue("sys_id");
+	new x_snc_pa_demo_data.breakdown().load(genID);
+    new x_snc_pa_demo_data.level1().generate(genID);
+    gen.status = 'Queued';
+    gen.start_time = '';
+    gen.end_time='';
+    gen.duration='';
+    gen.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-20 14:41:13</sys_created_on>
+        <sys_id>6813bdfedb8218d0819f62dc139619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>12d4ba0edb0e14d0819f62dc139619e1</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_6813bdfedb8218d0819f62dc139619ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-20 14:41:13</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

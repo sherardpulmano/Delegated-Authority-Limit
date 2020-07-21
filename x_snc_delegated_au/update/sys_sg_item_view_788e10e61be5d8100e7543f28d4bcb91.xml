@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item display_value="Delegated Authority Limits DAL Amounts">748e10e61be5d8100e7543f28d4bcb91</data_item>
+        <dependency_fields>limit_amount</dependency_fields>
+        <item_view_json>{"Children":[{"Children":[{"Children":[{"Text":"","CornerRadius":2,"CellId":"limit_amount","MaxLines":1,"TextColor":"#293e40","Width":100,"Height":21,"Font":{"Weight":"semibold","Size":13},"BackgroundColor":"#f1f1f1","studio_template_field_id":"E1","TextAlignment":"Center","Type":"Text"}],"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Margin":{"Right":12},"Type":"ViewGroup"},{"Children":[{"Text":"","CellId":"","MaxLines":1,"TextColor":"#7d8a8c","Font":{"Weight":"regular","Size":13},"studio_template_field_id":"E2","TextAlignment":"Right","Type":"Text"}],"Orientation":"Vertical","Alignment":"Right","Distribution":"Auto","Type":"ViewGroup"}],"Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Equal","Type":"ViewGroup"},{"Text":"","CellId":"","MaxLines":2,"TextColor":"#293e40","Font":{"Weight":"regular","Size":18},"studio_template_field_id":"E3","TextAlignment":"Left","Margin":{"Top":9},"Type":"Text"},{"Children":[{"Children":[{"Text":"","MaxLines":1,"TextColor":"#7d8a8c","studio_template_is_label":true,"Font":{"Weight":"regular","Size":13},"studio_template_field_id":"E4","TextAlignment":"Left","Margin":{"Right":8},"Type":"Text"},{"Scaling":"Fill","CornerRadius":11,"CellId":"","Width":22,"Height":22,"studio_template_field_id":"E5","Margin":{"Right":6},"Type":"Image"},{"Text":"","CellId":"","MaxLines":1,"TextColor":"#293e40","Font":{"Weight":"regular","Size":13},"studio_template_field_id":"E4","TextAlignment":"Left","Type":"Text"}],"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Margin":{"Top":9},"Type":"ViewGroup"},{"Children":[{"Text":"","MaxLines":1,"TextColor":"#7d8a8c","studio_template_is_label":true,"Font":{"Weight":"regular","Size":13},"studio_template_field_id":"E6","TextAlignment":"Left","Margin":{"Right":8},"Type":"Text"},{"Text":"","CellId":"","MaxLines":1,"TextColor":"#293e40","Font":{"Weight":"regular","Size":13},"studio_template_field_id":"E6","TextAlignment":"Left","Type":"Text"}],"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Margin":{"Top":7},"Type":"ViewGroup"}],"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Type":"ViewGroup"}],"Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","studio_card_id":"9599488923452300a8ed7f4fc7bf652e","Margin":{"Top":17,"Bottom":15},"Type":"ViewGroup"}</item_view_json>
+        <name>DAL Amounts List Screen Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:21:54</sys_created_on>
+        <sys_id>788e10e61be5d8100e7543f28d4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DAL Amounts List Screen Item View</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_sg_item_view_788e10e61be5d8100e7543f28d4bcb91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:21:54</sys_updated_on>
+        <table>x_snc_delegated_au_dal_amounts</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=788e10e61be5d8100e7543f28d4bcb91"/>
+</record_update>

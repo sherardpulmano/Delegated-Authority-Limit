@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script/>
+        <name>Delete (DAL Types)</name>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:21:54</sys_created_on>
+        <sys_id>e08e10e61be5d8100e7543f28d4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete (DAL Types)</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_e08e10e61be5d8100e7543f28d4bcb6b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:21:54</sys_updated_on>
+        <table>x_snc_delegated_au_dal_types</table>
+        <template/>
+        <type>delete</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=e08e10e61be5d8100e7543f28d4bcb6b"/>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="DAL Requests" max_length="40" name="x_snc_delegated_au_dals" sizeclass="22" text_index="true" type="collection">
+        <element label="Authority Matrix Version Number" max_length="15" name="authority_matrix_version_number" type="decimal"/>
+        <element attributes="encode_utf8=false" label="Authorized Purchaser" max_length="32" name="authorized_purchaser" reference="sys_user" type="reference"/>
+        <element label="CFI DAL Version Number" max_length="15" name="cfi_dal_version_number" type="decimal"/>
+        <element label="Credit and Rebate Version Number" max_length="15" name="credit_and_rebate_version_number" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="DAL Expiration Date" max_length="40" name="dal_expiration_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" display="true" label="Limit Amount" max_length="32" name="limit_amount" reference="x_snc_delegated_au_dal_amounts" type="reference"/>
+        <element attributes="encode_utf8=false" label="Limit Type" max_length="32" name="limit_type" reference="x_snc_delegated_au_dal_types" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested Amount" max_length="40" name="total_authority_request_amount" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Authority Type" max_length="1024" name="u_authority_type" reference="x_snc_delegated_au_dal_types" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Business Unit" max_length="32" name="u_business_unit" reference="business_unit" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Profit Center" max_length="1024" name="u_glide_list_15" reference="cmn_cost_center" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Manager ID" max_length="40" name="u_manager_id" type="string"/>
+        <element attributes="encode_utf8=false" label="Requestor" max_length="32" name="u_requestor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_requestor" dependent_on_field="u_requestor" label="Email" max_length="40" name="u_requestor_email" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_requestor" dependent_on_field="u_requestor" label="Requestor ID" max_length="40" name="u_requestor_id" type="string" use_dependent_field="true"/>
+        <element attributes="encode_utf8=false" label="Requestor Limits" max_length="32" name="u_requestor_limits" reference="x_snc_delegated_au_dal_amounts" type="reference"/>
+        <element attributes="encode_utf8=false" dependent="u_requestor" dependent_on_field="u_requestor" label="Manager" max_length="32" name="u_requestor_manager" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_requestor" dependent_on_field="u_requestor" label="Phone" max_length="40" name="u_requestor_phone" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_requestor" dependent_on_field="u_requestor" label="Title" max_length="40" name="u_requestor_title" type="string" use_dependent_field="true"/>
+    </element>
+</database>

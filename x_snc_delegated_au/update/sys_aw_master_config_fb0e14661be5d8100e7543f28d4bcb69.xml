@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_master_config">
+    <sys_aw_master_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <brand_color/>
+        <compiled_page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</compiled_page>
+        <compiled_page_registry display_value="Delegated Authority Limits">041e14661be5d8100e7543f28d4bcb6a</compiled_page_registry>
+        <description/>
+        <global_search display_value="Default search settings">97a574ea53c0130084acddeeff7b12a6</global_search>
+        <global_search_data display_value="Delegated Authority Limits Search Context Config">3f0e14661be5d8100e7543f28d4bcb67</global_search_data>
+        <name>Delegated Authority Limits</name>
+        <navigation_type>tab</navigation_type>
+        <notifications_enabled>true</notifications_enabled>
+        <primary_color/>
+        <search_enabled>true</search_enabled>
+        <sys_class_name>sys_aw_master_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:19:56</sys_created_on>
+        <sys_id>fb0e14661be5d8100e7543f28d4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delegated Authority Limits</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_aw_master_config_fb0e14661be5d8100e7543f28d4bcb69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:19:56</sys_updated_on>
+        <user_preference_controls_enabled>true</user_preference_controls_enabled>
+        <workspace_logo/>
+        <workspace_url>delegated_authorit</workspace_url>
+    </sys_aw_master_config>
+</record_update>

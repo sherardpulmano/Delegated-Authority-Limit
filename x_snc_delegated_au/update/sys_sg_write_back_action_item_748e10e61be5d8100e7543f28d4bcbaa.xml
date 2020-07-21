@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script/>
+        <name>Edit (DALs)</name>
+        <query_condition table="x_snc_delegated_au_dals">sys_idSTARTSWITH{{DALs sys_id}}^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="false" value="{{DALs sys_id}}"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </query_condition>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:21:55</sys_created_on>
+        <sys_id>748e10e61be5d8100e7543f28d4bcbaa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Edit (DALs)</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_748e10e61be5d8100e7543f28d4bcbaa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:21:55</sys_updated_on>
+        <table>x_snc_delegated_au_dals</table>
+        <template>priority={{DALs priority}}^state={{DALs state}}^short_description={{DALs short_description}}^description={{DALs description}}^assigned_to={{DALs assigned_to}}^assignment_group={{DALs assignment_group}}^company={{DALs company}}^location={{DALs location}}^cmdb_ci={{DALs cmdb_ci}}^business_service={{DALs business_service}}^EQ</template>
+        <type>update</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=748e10e61be5d8100e7543f28d4bcbaa"/>
+</record_update>

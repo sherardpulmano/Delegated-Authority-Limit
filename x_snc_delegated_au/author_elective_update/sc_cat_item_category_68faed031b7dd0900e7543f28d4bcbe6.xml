@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Delegation of Authorization Limits Form">5e256d0b1b3dd0900e7543f28d4bcbc4</sc_cat_item>
+        <sc_category display_value="Departmental Services">95fc11615f1211001c9b2572f2b477c6</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-08 22:28:31</sys_created_on>
+        <sys_id>68faed031b7dd0900e7543f28d4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Departmental Services.Delegation of Authorization Limits Form</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sc_cat_item_category_68faed031b7dd0900e7543f28d4bcbe6</sys_update_name>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:28:31</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</application>
+        <file_path/>
+        <instance_id>18b08dc7dbc15014413450b6f4961967</instance_id>
+        <instance_name>spulmdemo</instance_name>
+        <name>sc_cat_item_category_68faed031b7dd0900e7543f28d4bcbe6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Delegation of Authorization Limits Form">5e256d0b1b3dd0900e7543f28d4bcbc4</sc_cat_item><sc_category display_value="Departmental Services">95fc11615f1211001c9b2572f2b477c6</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>innovation.factory</sys_created_by><sys_created_on>2020-07-08 22:28:31</sys_created_on><sys_id>68faed031b7dd0900e7543f28d4bcbe6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Departmental Services.Delegation of Authorization Limits Form</sys_name><sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package><sys_policy/><sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope><sys_update_name>sc_cat_item_category_68faed031b7dd0900e7543f28d4bcbe6</sys_update_name><sys_updated_by>innovation.factory</sys_updated_by><sys_updated_on>2020-07-08 22:28:31</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1581478440</payload_hash>
+        <record_name>Departmental Services.Delegation of Authorization Limits Form</record_name>
+        <reverted_from/>
+        <source>c1ca54621be5d8100e7543f28d4bcbc9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-08 22:28:31</sys_created_on>
+        <sys_id>e0faed031b7dd0900e7543f28d4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173308b70300000001</sys_recorded_at>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:28:31</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>e8faed03cc7dd09086c46dc498e2f9f5</update_guid>
+        <update_guid_history>e8faed03cc7dd09086c46dc498e2f9f5:-1581478440</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Departmental Services.Delegation of Authorization Limits Form">53d9cf0fdb8e58d0819f62dc13961980</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-21 15:38:55</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>5bb6f1c4f0c74bf89900cb8fd0b87840</sys_id>
+        <sys_metadata>68faed031b7dd0900e7543f28d4bcbe6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Departmental Services.Delegation of Authorization Limits Form</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_parent display_value="Delegation of Authorization Limits Form">5e256d0b1b3dd0900e7543f28d4bcbc4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_scope_delete display_value="">35dbea01bc8a492280e7bc976f108564</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_68faed031b7dd0900e7543f28d4bcbe6</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_68faed031b7dd0900e7543f28d4bcbe6">e0faed031b7dd0900e7543f28d4bcbf6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-21 15:38:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

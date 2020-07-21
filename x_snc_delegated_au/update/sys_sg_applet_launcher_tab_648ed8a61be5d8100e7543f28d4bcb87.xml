@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="Delegated Authority Limits">a08ed8a61be5d8100e7543f28d4bcb86</applet_launcher>
+        <icon display_value="Home Delegated Authority Limits">a48ed8a61be5d8100e7543f28d4bcb87</icon>
+        <label>Delegated Authority Limits</label>
+        <roles>admin</roles>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 17:21:53</sys_created_on>
+        <sys_id>648ed8a61be5d8100e7543f28d4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delegated Authority Limits</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_648ed8a61be5d8100e7543f28d4bcb87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 17:21:53</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>
