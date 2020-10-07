@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>3b621f191bf2dc900e7543f28d4bcb34</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 14:32:18</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[//Manually install pa for vr so it doesn't load demo data
+var worker = new GlideScriptedHierarchicalWorker();
+worker.setProgressName('DemoHub App: Install Store App Performance Analytics - Content Pack - Vulnerability Response');
+worker.setBackground(false);
+worker.setCannotCancel(true);
+worker.setScriptIncludeName("sn_appclient.AppUpgrader");
+worker.setScriptIncludeMethod("upgradeProcess");
+worker.putMethodArg("appID", "27b5fa005301120034c69816a11c085d");
+worker.putMethodArg("version", "8.0.10");
+worker.putMethodArg("loadDemoData", "false");
+worker.putMethodArg("obtainMutex", true);
+worker.start();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 14:32:18</sys_created_on>
+        <sys_id>72a0c2ce1b7a90d00e7543f28d4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3b621f191bf2dc900e7543f28d4bcb34</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_72a0c2ce1b7a90d00e7543f28d4bcbeb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 14:32:18</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>3f621f191bf2dc900e7543f28d4bcb34</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 14:32:39</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// PA Scripts
+/*
+ var pajobs = new GlideRecord("sysauto_pa"); // [PA VR] Historical Vulnerability Data Job
+pajobs.get('135b02ba87e713003058d1a936cb0b68');
+SncTriggerSynchronizer.executeNow(pajobs);
+gs.sleep(1000); 
+*/
+/*
+var pajobs = new GlideRecord("sysauto_pa"); // [PA SIR] Historical Security Incident Data Job
+pajobs.get('ff418c85df03310068c32df36bf26312');
+SncTriggerSynchronizer.executeNow(pajobs);
+gs.sleep(1000);
+*/
+pajobs = new GlideRecord("sysauto_pa"); // [PA GRC] Risk Demo Data Job
+pajobs.get('18b47b78dba71700000f9e7aca9619da');
+SncTriggerSynchronizer.executeNow(pajobs);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 14:32:39</sys_created_on>
+        <sys_id>00c086ce1b7a90d00e7543f28d4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f621f191bf2dc900e7543f28d4bcb34</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_00c086ce1b7a90d00e7543f28d4bcb48</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 14:32:39</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

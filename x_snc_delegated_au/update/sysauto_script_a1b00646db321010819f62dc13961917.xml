@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>bb621f191bf2dc900e7543f28d4bcb34</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 14:32:28</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// SecOps Scripts
+
+var jobs = new GlideRecord('sysauto_script');
+
+jobs.get("da08444edb67af002e1a769e0f9619fe"); // Randomize SIR Metric Scores
+SncTriggerSynchronizer.executeNow(jobs);
+gs.sleep(3000);
+
+jobs.get("8865a3f2db27e340b7939cb8db96193f"); // Randomize Compliance Scores
+SncTriggerSynchronizer.executeNow(jobs);
+gs.sleep(3000);
+
+jobs.get("b890dd24db3ba7402e1a769e0f9619c7"); // Manage Integration Capability States
+SncTriggerSynchronizer.executeNow(jobs);
+gs.sleep(2000);
+
+jobs.get("d9351674dbfbe7402e1a769e0f961948"); // Generate Orchestration ROI Data
+SncTriggerSynchronizer.executeNow(jobs);
+gs.sleep(2000);
+
+jobs.get("2079f3c1db3fe300e6a7fb371d961952"); // Run Vulnerability Master Job (launches PA)
+SncTriggerSynchronizer.executeNow(jobs);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 14:32:28</sys_created_on>
+        <sys_id>a1b00646db321010819f62dc13961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bb621f191bf2dc900e7543f28d4bcb34</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_a1b00646db321010819f62dc13961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 14:32:28</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

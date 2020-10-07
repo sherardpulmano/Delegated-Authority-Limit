@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>33621f191bf2dc900e7543f28d4bcb35</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 14:32:58</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// Delete Vuln Item PA Scores older than oldest vuln item -----------------------
+// This fixes a data issue with the original secops/grc demo pack
+
+var vulnItem = new GlideRecord('sn_vul_vulnerable_item');
+vulnItem.addQuery('first_found', '!=', ''); 
+vulnItem.addQuery('sys_id', '!=', '4bfa7c0adbffc7009ab4f9b61d961979');
+vulnItem.orderBy('first_found');
+vulnItem.query();
+
+if (vulnItem.next()) {
+  var firstDate = vulnItem.first_found;
+  firstDate = firstDate.replace(/-/g,'');
+  gs.info(firstDate);
+  var sdu = new global.SecurityDemoUtils();
+  sdu.purgePAScores('Vulnerable Items', '20150101', firstDate);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 14:32:58</sys_created_on>
+        <sys_id>bcd08e46db321010819f62dc139619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>33621f191bf2dc900e7543f28d4bcb35</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_bcd08e46db321010819f62dc139619d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 14:32:58</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

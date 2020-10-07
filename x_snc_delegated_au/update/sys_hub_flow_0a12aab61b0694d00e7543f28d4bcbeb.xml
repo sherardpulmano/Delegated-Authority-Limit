@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-orlando-12-11-2019__patch4-05-20-2020</compiler_build>
+        <compiler_build>glide-orlando-12-11-2019__patch7-08-19-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>dal_set_due_date</internal_name>
         <label_cache>[{"name":"a4390a84-ac5c-44f7-8131-72d11c27e2f3.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a4390a84-ac5c-44f7-8131-72d11c27e2f3.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛DALs Record","reference":"x_snc_delegated_au_child_dal","reference_display":"DALs","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
-        <latest_snapshot>bf8633cbdb8298d0819f62dc139619b4</latest_snapshot>
+        <latest_snapshot>ecac41f71b93d0100e7543f28d4bcb52</latest_snapshot>
         <master_snapshot>0226aefa1b0694d00e7543f28d4bcb78</master_snapshot>
         <name>DAL Set Due Date</name>
         <natlang/>
@@ -83,10 +83,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:10:57</sys_created_on>
         <sys_id>2c13aef61b0694d00e7543f28d4bcb03</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
-        <sys_updated_by>Amanda.Wu</sys_updated_by>
-        <sys_updated_on>2020-07-21 18:54:14</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-09-23 17:45:45</sys_updated_on>
         <ui_id>a4390a84-ac5c-44f7-8131-72d11c27e2f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2c13aef61b0694d00e7543f28d4bcb03"/>
@@ -394,10 +394,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:10:57</sys_created_on>
         <sys_id>2c13aef61b0694d00e7543f28d4bcb03</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
-        <sys_updated_by>Amanda.Wu</sys_updated_by>
-        <sys_updated_on>2020-07-21 18:54:14</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-09-23 17:45:45</sys_updated_on>
         <ui_id>a4390a84-ac5c-44f7-8131-72d11c27e2f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2c13aef61b0694d00e7543f28d4bcb03"/>
@@ -550,7 +550,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1226aefa1b0694d00e7543f28d4bcbe3","name":"plan"}}</plan>
         <plan_id>0a12aab61b0694d00e7543f28d4bcbeb</plan_id>
-        <snapshot>bf8633cbdb8298d0819f62dc139619b4</snapshot>
+        <snapshot>ecac41f71b93d0100e7543f28d4bcb52</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:24:27</sys_created_on>
         <sys_domain>global</sys_domain>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>3b621f191bf2dc900e7543f28d4bcb35</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 16:06:03</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[//Solutions
+//fix software on vi
+
+var vi = new GlideRecord('sn_vul_vulnerable_item');
+
+//vi.addNullQuery('sw_vulnerability');
+
+vi.query();
+
+while (vi.next()) {
+    var s = getSoftware(vi.vulnerability.software_vulnerabilities_raw);
+    if (s) {
+        vi.sw_vulnerability = s.sys_id + '';
+        vi.update();
+    }
+}
+
+function getSoftware(id) {
+    if (id) {
+        id = id.split(',')[0];
+        id = id.slice(0, id.lastIndexOf(':'));
+        id = id.slice(0, id.lastIndexOf(':'));
+
+        var vs = new GlideRecord('sn_vul_software');
+        vs.addQuery('raw_product', 'STARTSWITH', id);
+        vs.query();
+        if (vs.next()) {
+            return vs;
+        }
+    }
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 16:06:03</sys_created_on>
+        <sys_id>1426d6ca1b3610100e7543f28d4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3b621f191bf2dc900e7543f28d4bcb35</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_1426d6ca1b3610100e7543f28d4bcb11</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 16:06:03</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

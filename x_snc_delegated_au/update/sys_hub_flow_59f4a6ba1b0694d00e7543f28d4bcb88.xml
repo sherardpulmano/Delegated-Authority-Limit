@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-orlando-12-11-2019__patch4-05-20-2020</compiler_build>
+        <compiler_build>glide-orlando-12-11-2019__patch7-08-19-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>dal_expiration_date</internal_name>
         <label_cache>[{"name":"65d86d46-85d9-4cd1-8888-571d3b2c8030.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"65d86d46-85d9-4cd1-8888-571d3b2c8030.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e667ab8d-5160-4fa1-9766-f536d1fd488b.item","label":"2➛DALs Record","reference":"x_snc_delegated_au_child_dal","reference_display":"DALs","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"61ea2930-367a-4fcf-960e-137e4fb7b571.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ea2930-367a-4fcf-960e-137e4fb7b571.Table","label":"1➛DALs Table","reference":"x_snc_delegated_au_child_dal","reference_display":"DALs","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ea2930-367a-4fcf-960e-137e4fb7b571.Records","label":"1➛DALs Records","reference":"x_snc_delegated_au_child_dal","reference_display":"DALs","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <latest_snapshot>873355cbdb4658d0819f62dc13961900</latest_snapshot>
+        <latest_snapshot>ed6f29d31bdf10100e7543f28d4bcb98</latest_snapshot>
         <master_snapshot>26162efa1b0694d00e7543f28d4bcbbf</master_snapshot>
         <name>DAL expiration date</name>
         <natlang/>
@@ -110,10 +110,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:23:57</sys_created_on>
         <sys_id>17062afa1b0694d00e7543f28d4bcbf9</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-21 07:00:41</sys_updated_on>
+        <sys_updated_on>2020-09-22 07:00:43</sys_updated_on>
         <ui_id>61ea2930-367a-4fcf-960e-137e4fb7b571</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=17062afa1b0694d00e7543f28d4bcbf9"/>
@@ -160,10 +160,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:23:58</sys_created_on>
         <sys_id>5706eafa1b0694d00e7543f28d4bcb85</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-21 07:00:41</sys_updated_on>
+        <sys_updated_on>2020-09-22 07:00:43</sys_updated_on>
         <ui_id>65d86d46-85d9-4cd1-8888-571d3b2c8030</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5706eafa1b0694d00e7543f28d4bcb85"/>
@@ -335,10 +335,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:23:57</sys_created_on>
         <sys_id>17062afa1b0694d00e7543f28d4bcbf9</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-21 07:00:41</sys_updated_on>
+        <sys_updated_on>2020-09-22 07:00:43</sys_updated_on>
         <ui_id>61ea2930-367a-4fcf-960e-137e4fb7b571</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=17062afa1b0694d00e7543f28d4bcbf9"/>
@@ -385,10 +385,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:23:58</sys_created_on>
         <sys_id>5706eafa1b0694d00e7543f28d4bcb85</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-21 07:00:41</sys_updated_on>
+        <sys_updated_on>2020-09-22 07:00:43</sys_updated_on>
         <ui_id>65d86d46-85d9-4cd1-8888-571d3b2c8030</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5706eafa1b0694d00e7543f28d4bcb85"/>
@@ -505,7 +505,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"87162efa1b0694d00e7543f28d4bcbe0","name":"plan"}}</plan>
         <plan_id>59f4a6ba1b0694d00e7543f28d4bcb88</plan_id>
-        <snapshot>873355cbdb4658d0819f62dc13961900</snapshot>
+        <snapshot>ed6f29d31bdf10100e7543f28d4bcb98</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-20 18:24:13</sys_created_on>
         <sys_domain>global</sys_domain>

@@ -76,21 +76,21 @@
 	}
 	
 })();]]></script>
-        <short_description/>
+        <short_description>Delegation of Authorization Limits Form</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-08 22:03:14</sys_created_on>
         <sys_id>5e256d0b1b3dd0900e7543f28d4bcbc4</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Delegation of Authorization Limits Form</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sc_cat_item_producer_5e256d0b1b3dd0900e7543f28d4bcbc4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-21 15:38:54</sys_updated_on>
+        <sys_updated_on>2020-08-13 12:58:35</sys_updated_on>
         <table_name>x_snc_delegated_au_dals</table_name>
         <template/>
         <type>item</type>

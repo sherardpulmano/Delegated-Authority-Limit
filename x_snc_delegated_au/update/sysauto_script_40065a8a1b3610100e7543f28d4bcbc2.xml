@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>b7621f191bf2dc900e7543f28d4bcb35</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 16:05:29</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// Executes Demo Generators to generate L1 VR PA Demo Data
+
+var conf = 'NY_VR_NonDeferred_Vuln_Groups';
+var gen = new GlideRecord('x_snc_pa_demo_data_generator');
+gen.addEncodedQuery('configurationLIKE'+conf);
+gen.query();
+while(gen.next()){
+
+    new x_snc_pa_demo_data.breakdown().load(gen.sys_id);
+   new x_snc_pa_demo_data.level1().generate(gen.sys_id);
+   gen.status = 'Queued';
+    gen.start_time = '';
+    gen.end_time='';
+    gen.duration='';
+   gen.update();
+    
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 16:05:29</sys_created_on>
+        <sys_id>40065a8a1b3610100e7543f28d4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b7621f191bf2dc900e7543f28d4bcb35</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_40065a8a1b3610100e7543f28d4bcbc2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 16:05:29</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

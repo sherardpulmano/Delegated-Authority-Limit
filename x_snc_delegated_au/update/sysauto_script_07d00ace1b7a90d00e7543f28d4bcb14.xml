@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>b3621f191bf2dc900e7543f28d4bcb35</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-08-24 14:33:08</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// Determine SI Metrics Start Time
+
+var gr7 = new GlideRecord('metric_instance');
+gr7.addQuery('sys_id', simFirstRec);
+gr7.query();
+if (gr7.next()) {
+	simStart.setValue( gr7.start);
+	simStart = simStart.toString();
+} else {
+	OK = false;
+   gs.addErrorMessage('SECOPS: Reporting Demo Updates - Failed to find first SI Metric: ' + simFirstRec);
+}
+
+if (OK) {
+	
+	// Determine SI Metrics End Time
+	
+	gr8 = new GlideRecord('metric_instance');
+	gr8.addQuery('sys_id', simLastRec);
+	gr8.query();
+	if (gr8.next ()) {
+		simEnd.setValue( gr8.end);
+		simEnd = simEnd.toString();
+	} else {
+		gs.addErrorMessage('SECOPS: Reporting Demo Updates - Failed to find last SI Metric: ' + simLastRec);
+		OK = false;
+	}
+}
+
+if (OK) {
+	var rep1 = new GlideRecord('sys_report');
+	if(rep1.get('1007bd90db328f000bee79daae96195d')) {
+		
+		var newFilt = rep1.filter;  
+		newFilt = newFilt.replace(/2018\-08\-05/g, simEnd);   // Original report filter date
+		newFilt = newFilt.replace(/2018\-07\-28/g, simStart); // Original report filter date
+		rep1.filter = newFilt;
+
+		gs.info('SECOPS: Reporting Demo Updates - Updating Report filters on: '+ rep1.title);
+		rep1.update();
+	}
+	
+	gs.info('simStart: '+ simStart);
+	gs.info('simEnd: '+ simEnd);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 14:33:08</sys_created_on>
+        <sys_id>07d00ace1b7a90d00e7543f28d4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b3621f191bf2dc900e7543f28d4bcb35</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysauto_script_07d00ace1b7a90d00e7543f28d4bcb14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 14:33:08</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

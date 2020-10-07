@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_delegated_au_dal_amounts" version="2" view="">
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_database" version="2" view="RPTb20e5f721bea90900e7543f28d4bcbdf">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>limit_amount</element>
-            <list_id display_value="x_snc_delegated_au_dal_amounts" element="NULL" name="x_snc_delegated_au_dal_amounts" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">34337de6dbe65090819f62dc139619c1</list_id>
+            <element>install_date</element>
+            <list_id display_value="cmdb_ci_database" element="NULL" name="cmdb_ci_database" parent="NULL" relationship="NULL" sys_domain="global" view="e30e9f721bea90900e7543f28d4bcb32">2b0e9f721bea90900e7543f28d4bcb33</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-08-13 16:34:43</sys_created_on>
-            <sys_id>70337de6dbe65090819f62dc139619c2</sys_id>
+            <sys_created_on>2020-08-14 19:00:04</sys_created_on>
+            <sys_id>7f0e9f721bea90900e7543f28d4bcb34</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-08-13 16:34:43</sys_updated_on>
+            <sys_updated_on>2020-08-14 19:00:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element/>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <name>x_snc_delegated_au_dal_amounts</name>
+            <name>cmdb_ci_database</name>
             <parent/>
             <position/>
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-08-13 16:34:43</sys_created_on>
+            <sys_created_on>2020-08-14 19:00:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>34337de6dbe65090819f62dc139619c1</sys_id>
+            <sys_id>2b0e9f721bea90900e7543f28d4bcb33</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>x_snc_delegated_au_dal_amounts</sys_name>
+            <sys_name>cmdb_ci_database</sys_name>
             <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
             <sys_policy/>
             <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
-            <sys_update_name>sys_ui_list_x_snc_delegated_au_dal_amounts_null</sys_update_name>
+            <sys_update_name>sys_ui_list_cmdb_ci_database_RPTb20e5f721bea90900e7543f28d4bcbdf</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-08-13 16:34:43</sys_updated_on>
+            <sys_updated_on>2020-08-14 19:00:03</sys_updated_on>
             <sys_user/>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Rptb20e5f721bea90900e7543f28d4bcbdf" name="RPTb20e5f721bea90900e7543f28d4bcbdf">e30e9f721bea90900e7543f28d4bcb32</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

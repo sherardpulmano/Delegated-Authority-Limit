@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="DAL Types" max_length="40" name="x_snc_delegated_au_dal_types" sizeclass="4" text_index="true" type="collection">
-        <element attributes="edge_encryption_enabled=true" display="true" label="Limit Types" max_length="100" name="limit_types" type="string"/>
+    <element label="DAL Types" max_length="40" name="x_snc_delegated_au_dal_types" sizeclass="14" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,no_truncate=true" display="true" label="Limit Types" max_length="200" name="limit_types" type="string"/>
     </element>
 </database>
