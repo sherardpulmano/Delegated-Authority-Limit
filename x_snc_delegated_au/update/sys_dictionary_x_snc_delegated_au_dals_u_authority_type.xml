@@ -3,10 +3,10 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>no_sort=true,slushbucket_ref_no_expand=true</attributes>
+        <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Authority Type</column_label>
@@ -27,7 +27,7 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_list</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
         <max_length>1024</max_length>
         <name>x_snc_delegated_au_dals</name>
@@ -49,14 +49,14 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-08 21:44:34</sys_created_on>
         <sys_id>30e065071b3dd0900e7543f28d4bcbab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Authority Type</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_delegated_au_dals_u_authority_type</sys_update_name>
-        <sys_updated_by>innovation.factory</sys_updated_by>
-        <sys_updated_on>2020-07-08 21:44:34</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-27 07:41:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

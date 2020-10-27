@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="u_authority_type" label="Authority Type" language="en" table="x_snc_delegated_au_dals">
+    <sys_documentation element="u_authority_type" label="Authority Types" language="en" table="x_snc_delegated_au_child_dal">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>u_authority_type</element>
             <help/>
             <hint/>
-            <label>Authority Type</label>
+            <label>Authority Types</label>
             <language>en</language>
-            <name>x_snc_delegated_au_dals</name>
+            <name>x_snc_delegated_au_child_dal</name>
             <plural>Authority Types</plural>
             <sys_class_name>sys_documentation</sys_class_name>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-08 21:44:34</sys_created_on>
-            <sys_id>b0e065071b3dd0900e7543f28d4bcbaf</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Authority Type</sys_name>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 07:42:17</sys_created_on>
+            <sys_id>4998822adb0ce490819f62dc1396198c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Authority Types</sys_name>
             <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
             <sys_policy/>
             <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_delegated_au_dals_u_authority_type_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_snc_delegated_au_child_dal_u_authority_type_en</sys_update_name>
             <sys_updated_by>Vincent.Hou</sys_updated_by>
-            <sys_updated_on>2020-10-27 07:23:26</sys_updated_on>
+            <sys_updated_on>2020-10-27 10:17:35</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

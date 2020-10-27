@@ -3,168 +3,168 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>bdbf6272db4a18d0819f62dc1396195f</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>92eb2a2edbcce490819f62dc13961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>parent</element>
             <position>1</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>79bf6272db4a18d0819f62dc13961960</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>2aeb2a2edbcce490819f62dc13961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_requestor</element>
             <position>2</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>fdbf6272db4a18d0819f62dc13961960</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>aaeb2a2edbcce490819f62dc13961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_authority_type</element>
-            <position>3</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>75bf6272db4a18d0819f62dc13961961</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>4</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>f9bf6272db4a18d0819f62dc13961961</sys_id>
+            <position>3</position>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>2eeb2a2edbcce490819f62dc13961975</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_authority_type</element>
+            <position>4</position>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>aeeb2a2edbcce490819f62dc13961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>due_date</element>
             <position>5</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>71bf6272db4a18d0819f62dc13961962</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>22eb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>6</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>f5bf6272db4a18d0819f62dc13961962</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>a2eb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>7</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>7dbf6272db4a18d0819f62dc13961962</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>26eb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>priority</element>
             <position>8</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>f1bf6272db4a18d0819f62dc13961963</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>a6eb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
             <position>9</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>79bf6272db4a18d0819f62dc13961963</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>2aeb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_requestor_amounts</element>
             <position>10</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>fdbf6272db4a18d0819f62dc13961963</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>aaeb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_override</element>
             <position>11</position>
-            <sys_created_by>innovation.factory</sys_created_by>
-            <sys_created_on>2020-07-20 19:06:11</sys_created_on>
-            <sys_id>75bf6272db4a18d0819f62dc13961964</sys_id>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-27 10:16:40</sys_created_on>
+            <sys_id>2eeb2a2edbcce490819f62dc13961976</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_delegated_au_child_dal" sys_domain="global" view="Default view">6efef1e11b8edc900e7543f28d4bcbdf</sys_ui_section>
-            <sys_updated_by>innovation.factory</sys_updated_by>
-            <sys_updated_on>2020-07-20 19:06:11</sys_updated_on>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-27 10:16:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
