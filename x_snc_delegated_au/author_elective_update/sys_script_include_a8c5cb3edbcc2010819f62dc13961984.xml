@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_delegated_au.IsMyDirectReportee</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>IsMyDirectReportee</name>
+        <script><![CDATA[var IsMyDirectReportee = Class.create();
+IsMyDirectReportee.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getMyDirectReports: function() {
+        gs.info('entering into loop');
+        var answer = new Array();
+        var i = 0;
+        var repManager = gs.getUserID();
+        var reportees = new GlideRecord('sys_user');
+        reportees.addQuery('manager', repManager);
+        reportees.query();
+        while (reportees.next()) {
+            answer[i++] = reportees.sys_id.toString();
+        }
+        return answer;
+    },
+
+    type: 'IsMyDirectReportee'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 06:48:51</sys_created_on>
+        <sys_id>a8c5cb3edbcc2010819f62dc13961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IsMyDirectReportee</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_script_include_a8c5cb3edbcc2010819f62dc13961984</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 06:48:51</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</application>
+        <file_path/>
+        <instance_id>18b08dc7dbc15014413450b6f4961967</instance_id>
+        <instance_name>spulmdemo</instance_name>
+        <name>sys_script_include_a8c5cb3edbcc2010819f62dc13961984</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_delegated_au.IsMyDirectReportee&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;IsMyDirectReportee&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var IsMyDirectReportee = Class.create();
+IsMyDirectReportee.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getMyDirectReports: function() {
+        gs.info('entering into loop');
+        var answer = new Array();
+        var i = 0;
+        var repManager = gs.getUserID();
+        var reportees = new GlideRecord('sys_user');
+        reportees.addQuery('manager', repManager);
+        reportees.query();
+        while (reportees.next()) {
+            answer[i++] = reportees.sys_id.toString();
+        }
+        return answer;
+    },
+
+    type: 'IsMyDirectReportee'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Vincent.Hou&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-28 06:48:51&lt;/sys_created_on&gt;&lt;sys_id&gt;a8c5cb3edbcc2010819f62dc13961984&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;IsMyDirectReportee&lt;/sys_name&gt;&lt;sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au"&gt;0dca54621be5d8100e7543f28d4bcbc6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Delegated Authority Limits"&gt;0dca54621be5d8100e7543f28d4bcbc6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a8c5cb3edbcc2010819f62dc13961984&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Vincent.Hou&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-28 06:48:51&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1490081799</payload_hash>
+        <record_name>IsMyDirectReportee</record_name>
+        <reverted_from/>
+        <source>d4f9cb661bcca4d00e7543f28d4bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 06:48:52</sys_created_on>
+        <sys_id>00f5c37edbcc2010819f62dc13961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1756df768660000001</sys_recorded_at>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 06:48:52</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>08f5c37e8bcc2010793e33c368b62b14</update_guid>
+        <update_guid_history>08f5c37e8bcc2010793e33c368b62b14:1490081799</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 06:51:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>2938cbd901d04bea99b9c2b44c5c32d1</sys_id>
+        <sys_metadata>a8c5cb3edbcc2010819f62dc13961984</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IsMyDirectReportee</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_scope_delete display_value="">35dbea01bc8a492280e7bc976f108564</sys_scope_delete>
+        <sys_update_name>sys_script_include_a8c5cb3edbcc2010819f62dc13961984</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a8c5cb3edbcc2010819f62dc13961984">00f5c37edbcc2010819f62dc13961915</sys_update_version>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 06:51:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

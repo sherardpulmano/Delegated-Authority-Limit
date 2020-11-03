@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>approval_email</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+    var subject = 'RE:'+email.subject;
+    template.print('<a href="mailto:spulmdemo@service-now.com ?subject=' + subject +'&body=' +email.watermark  +'">Click Here</a>');
+
+  
+
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 16:20:08</sys_created_on>
+        <sys_id>4d384dcbdb886010819f62dc1396199c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>approval_email</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_script_email_4d384dcbdb886010819f62dc1396199c</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 22:41:28</sys_updated_on>
+    </sys_script_email>
+</record_update>

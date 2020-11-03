@@ -17,7 +17,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -49,14 +49,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-06-24 17:10:32</sys_created_on>
         <sys_id>16ebdca21be5d8100e7543f28d4bcbde</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Limit Amount</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_delegated_au_dal_amounts_limit_amount</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-13 16:33:56</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 12:18:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

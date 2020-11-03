@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item/>
+        <catalog_variable>IO:6673bde11b4edc900e7543f28d4bcb0f</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-16 17:34:09</sys_created_on>
+        <sys_id>bd34fd251b4edc900e7543f28d4bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>justification</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97</sys_update_name>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-16 17:34:09</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Ask for justification">b014f9251b4edc900e7543f28d4bcb87</ui_policy>
+        <variable>justification</variable>
+        <variable_set display_value="Authorities">0b2ffeeb1b7994900e7543f28d4bcbda</variable_set>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</application>
+        <file_path/>
+        <instance_id>18b08dc7dbc15014413450b6f4961967</instance_id>
+        <instance_name>spulmdemo</instance_name>
+        <name>catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item/><catalog_variable>IO:6673bde11b4edc900e7543f28d4bcb0f</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>innovation.factory</sys_created_by><sys_created_on>2020-07-16 17:34:09</sys_created_on><sys_id>bd34fd251b4edc900e7543f28d4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>justification</sys_name><sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package><sys_policy/><sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope><sys_update_name>catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97</sys_update_name><sys_updated_by>innovation.factory</sys_updated_by><sys_updated_on>2020-07-16 17:34:09</sys_updated_on><table/><ui_policy display_value="Ask for justification">b014f9251b4edc900e7543f28d4bcb87</ui_policy><variable>justification</variable><variable_set display_value="Authorities">0b2ffeeb1b7994900e7543f28d4bcbda</variable_set><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-30427637</payload_hash>
+        <record_name>justification</record_name>
+        <reverted_from/>
+        <source>c1ca54621be5d8100e7543f28d4bcbc9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>innovation.factory</sys_created_by>
+        <sys_created_on>2020-07-16 17:34:09</sys_created_on>
+        <sys_id>ea44bd251b4edc900e7543f28d4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17358b0d0b70000001</sys_recorded_at>
+        <sys_updated_by>innovation.factory</sys_updated_by>
+        <sys_updated_on>2020-07-16 17:34:09</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>e244bd25664edc90d8eca5098e32c4fb</update_guid>
+        <update_guid_history>e244bd25664edc90d8eca5098e32c4fb:-30427637</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="justification">3911cd171b88a0100e7543f28d4bcb48</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 10:25:24</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>28372bcc5d57436187d46a4797156cd1</sys_id>
+        <sys_metadata>bd34fd251b4edc900e7543f28d4bcb97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>justification</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_scope_delete display_value="">35dbea01bc8a492280e7bc976f108564</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97">ea44bd251b4edc900e7543f28d4bcbfb</sys_update_version>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 10:25:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_snc_delegated_au_dals" label="DALs" max_length="40" name="x_snc_delegated_au_child_dal" sizeclass="47" type="collection">
+    <element extends="x_snc_delegated_au_dals" label="DALs" max_length="40" name="x_snc_delegated_au_child_dal" sizeclass="67" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Parent Creation Date" max_length="40" name="parent_creation_date" type="glide_date_time"/>
         <element label="Override" max_length="40" name="u_override" type="boolean"/>
         <element attributes="encode_utf8=false" label="Request Amount" max_length="32" name="u_requestor_amounts" reference="x_snc_delegated_au_dal_amounts" type="reference"/>
     </element>

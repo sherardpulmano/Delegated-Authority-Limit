@@ -64,17 +64,36 @@
 		var grDal = new GlideRecord('x_snc_delegated_au_child_dal');
 		grDal.initialize();
 		grDal.setValue('parent', current.getUniqueValue());
-		grDal.setValue('u_requestor_amounts', producer.authorities.getRow(i).u_requestor_amounts);
+		grDal.setValue('limit_amount', producer.authorities.getRow(i).u_requestor_amounts);
 		grDal.setValue('short_description', producer.authorities.getRow(i).justification);
 		grDal.setValue('u_requestor', producer.u_requestor);
 		gs.info('ALLISA SAYS = ' + producer.u_requestor);
 		grDal.setValue('u_override', producer.authorities.getRow(i).override == 'Yes');
 		gs.info(producer.authorities.getRow(i).override);
 		grDal.setValue('u_authority_type', producer.authorities.getRow(i).u_authority_type);
+		grDal.setValue('parent_creation_date', new GlideDateTime());
 		grDal.insert();
-		
+
 	}
-	
+	/** 
+	** Add Delegates
+	*/
+	if(producer.delegate_1){
+		gs.info('svk tt '+producer.authority_type);
+		insertDelegates(producer.authority_type,producer.delegate_1, producer.amount_1);
+	}
+	if(producer.delegate_2){
+		insertDelegates(producer.authority_type_two,producer.delegate_2, producer.amount_2);
+	}
+	function insertDelegates(type, delegate, amount){
+		var gr = new GlideRecord('x_snc_delegated_au_delegated_authorities');
+		gr.initialize();
+		gr.u_supervisor = gs.getUserID();
+		gr.u_user = delegate;
+		gr.u_limit_amount = amount;
+		gr.u_authority_type = type;
+		gr.insert();
+	}
 })();]]></script>
         <short_description>Delegation of Authorization Limits Form</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
@@ -83,15 +102,15 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-08 22:03:14</sys_created_on>
         <sys_id>5e256d0b1b3dd0900e7543f28d4bcbc4</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Delegation of Authorization Limits Form</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sc_cat_item_producer_5e256d0b1b3dd0900e7543f28d4bcbc4</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-13 12:58:35</sys_updated_on>
-        <table_name>x_snc_delegated_au_dals</table_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-11-03 09:03:35</sys_updated_on>
+        <table_name/>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>

@@ -5,20 +5,20 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
-        <mandatory>ignore</mandatory>
+        <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
-        <sys_created_by>innovation.factory</sys_created_by>
-        <sys_created_on>2020-07-16 17:34:09</sys_created_on>
-        <sys_id>bd34fd251b4edc900e7543f28d4bcb97</sys_id>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 16:37:20</sys_created_on>
+        <sys_id>5b26129b1b40e0100e7543f28d4bcba9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>justification</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
-        <sys_update_name>catalog_ui_policy_action_bd34fd251b4edc900e7543f28d4bcb97</sys_update_name>
-        <sys_updated_by>innovation.factory</sys_updated_by>
-        <sys_updated_on>2020-07-16 17:34:09</sys_updated_on>
+        <sys_update_name>catalog_ui_policy_action_5b26129b1b40e0100e7543f28d4bcba9</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 16:37:20</sys_updated_on>
         <table/>
         <ui_policy display_value="Ask for justification">b014f9251b4edc900e7543f28d4bcb87</ui_policy>
         <variable>justification</variable>

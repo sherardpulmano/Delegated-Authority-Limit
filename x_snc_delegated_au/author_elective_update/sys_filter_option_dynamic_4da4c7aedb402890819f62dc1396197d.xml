@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="DELETE">
+        <active>true</active>
+        <available_for_default>false</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>false</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <filter_by_schedule/>
+        <label>Is One of My Direct Reports</label>
+        <order/>
+        <roles/>
+        <script/>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-27 13:56:18</sys_created_on>
+        <sys_id>4da4c7aedb402890819f62dc1396197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is One of My Direct Reports</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_4da4c7aedb402890819f62dc1396197d</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-27 13:56:18</sys_updated_on>
+        <table/>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</application>
+        <file_path/>
+        <instance_id>18b08dc7dbc15014413450b6f4961967</instance_id>
+        <instance_name>spulmdemo</instance_name>
+        <name>sys_filter_option_dynamic_4da4c7aedb402890819f62dc1396197d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic"><sys_filter_option_dynamic action="INSERT_OR_UPDATE"><active>true</active><available_for_default>false</available_for_default><available_for_filter>true</available_for_filter><available_for_ref_qual>false</available_for_ref_qual><field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type><filter_by_schedule/><label>Is One of My Direct Reports</label><order/><roles/><script/><script_reference_id/><script_reference_table/><sys_class_name>sys_filter_option_dynamic</sys_class_name><sys_created_by>Vincent.Hou</sys_created_by><sys_created_on>2020-10-27 13:56:18</sys_created_on><sys_id>4da4c7aedb402890819f62dc1396197d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Is One of My Direct Reports</sys_name><sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package><sys_policy/><sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope><sys_update_name>sys_filter_option_dynamic_4da4c7aedb402890819f62dc1396197d</sys_update_name><sys_updated_by>Vincent.Hou</sys_updated_by><sys_updated_on>2020-10-27 13:56:18</sys_updated_on><table/><table_containing_filter/></sys_filter_option_dynamic></record_update>]]></payload>
+        <payload_hash>1452057625</payload_hash>
+        <record_name>Is One of My Direct Reports</record_name>
+        <reverted_from/>
+        <source>d4f9cb661bcca4d00e7543f28d4bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-27 13:56:18</sys_created_on>
+        <sys_id>3b2e1b22db042890819f62dc13961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1756a58615c0000001</sys_recorded_at>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-27 13:56:18</sys_updated_on>
+        <type>Dynamic Filter Options</type>
+        <update_guid>332e1b2294042890bd3ff88b9896be74</update_guid>
+        <update_guid_history>332e1b2294042890bd3ff88b9896be74:1452057625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-27 14:00:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_filter_option_dynamic">sys_filter_option_dynamic</sys_db_object>
+        <sys_id>50d43260b71549ac94b2d8d0bff00090</sys_id>
+        <sys_metadata>4da4c7aedb402890819f62dc1396197d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is One of My Direct Reports</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_scope_delete display_value="">35dbea01bc8a492280e7bc976f108564</sys_scope_delete>
+        <sys_update_name>sys_filter_option_dynamic_4da4c7aedb402890819f62dc1396197d</sys_update_name>
+        <sys_update_version display_value="sys_filter_option_dynamic_4da4c7aedb402890819f62dc1396197d">3b2e1b22db042890819f62dc13961974</sys_update_version>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-27 14:00:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

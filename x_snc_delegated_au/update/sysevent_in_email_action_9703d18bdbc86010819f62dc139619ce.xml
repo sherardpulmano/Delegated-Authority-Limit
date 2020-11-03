@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectLIKEDAL Request^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="DAL Request"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>DAL Request Approval</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+	
+	var approve = new GlideRecord('sysapproval_approver');
+	approve.addQuery('sysapproval',current.sys_id);
+	approve.orderByDesc('sys_created_on');
+	approve.query();
+	if(approve.next()){
+		approve.state = 'approved';
+	}
+	approve.update();
+	
+	
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 17:19:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9703d18bdbc86010819f62dc139619ce</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>DAL Request Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysevent_in_email_action_9703d18bdbc86010819f62dc139619ce</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:45:57</sys_updated_on>
+        <table>x_snc_delegated_au_child_dal</table>
+        <template>state=1^EQ</template>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

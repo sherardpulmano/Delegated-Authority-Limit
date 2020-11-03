@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="sys_user" version="2" view="dal_view">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - DAL View" name="sys_user" related_list="NULL" sys_domain="global" view="106866d31bc0e0100e7543f28d4bcbc8">9788ead31bc0e0100e7543f28d4bcb2c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_snc_delegated_au_child_dal.u_requestor</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-29 17:57:26</sys_created_on>
+            <sys_id>d388ead31bc0e0100e7543f28d4bcb2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-29 17:57:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - DAL View" name="sys_user" related_list="NULL" sys_domain="global" view="106866d31bc0e0100e7543f28d4bcbc8">9788ead31bc0e0100e7543f28d4bcb2c</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_snc_delegated_au_delegated_authorities.u_user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-29 17:57:26</sys_created_on>
+            <sys_id>d788ead31bc0e0100e7543f28d4bcb2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-29 17:57:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>User - DAL View</calculated_name>
+            <filter/>
+            <name>sys_user</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-29 17:57:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9788ead31bc0e0100e7543f28d4bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User - DAL View</sys_name>
+            <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+            <sys_update_name>sys_ui_related_sys_user_dal_view</sys_update_name>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-29 17:57:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="DAL View" name="dal_view">106866d31bc0e0100e7543f28d4bcbc8</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

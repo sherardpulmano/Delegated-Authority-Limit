@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="parent_creation_date" label="Parent Creation Date" language="en" table="x_snc_delegated_au_child_dal">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>parent_creation_date</element>
+            <help/>
+            <hint/>
+            <label>Parent Creation Date</label>
+            <language>en</language>
+            <name>x_snc_delegated_au_child_dal</name>
+            <plural>Parent Creation Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Vincent.Hou</sys_created_by>
+            <sys_created_on>2020-10-29 15:42:22</sys_created_on>
+            <sys_id>78a9c25b1b00e0100e7543f28d4bcb88</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Parent Creation Date</sys_name>
+            <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_delegated_au_child_dal_parent_creation_date_en</sys_update_name>
+            <sys_updated_by>Vincent.Hou</sys_updated_by>
+            <sys_updated_on>2020-10-29 15:42:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

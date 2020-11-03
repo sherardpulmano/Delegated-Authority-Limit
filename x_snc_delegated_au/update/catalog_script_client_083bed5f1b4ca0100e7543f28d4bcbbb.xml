@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Delegation of Authorization Limits Form">5e256d0b1b3dd0900e7543f28d4bcbc4</cat_item>
+        <cat_variable>IO:cd83c51b1b88a0100e7543f28d4bcb6b</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Add Dropdowns to Authoriy Type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	var itemSys = [];
+	
+	//Type appropriate comment here, and begin script below
+	var payload = JSON.parse(g_form.getValue('authorities'));
+
+	for(var i = 0; i<payload.length; i++){
+		itemSys.push(payload[i].u_authority_type);
+		var req_var = 'authorities_requestor_limit_'+(i+1);
+		g_form.setValue(req_var, payload[i].u_requestor_amounts);
+	}
+
+	var ga = new GlideAjax('u_DALAjax');
+	ga.addParam('sysparm_name','getAuthorityName');
+	ga.addParam('sysparm_payload',itemSys);
+	ga.getXML(callBack);
+
+	function callBack(response){
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		var itemName = answer;
+		itemName = itemName.split(',');
+		for(var i=0; i<itemName.length;i++){
+			g_form.addOption('authority_type',itemSys[i],itemName[i]);
+			g_form.addOption('authority_type_two',itemSys[i],itemName[i]);
+		}
+		
+	}
+
+
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 13:30:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>083bed5f1b4ca0100e7543f28d4bcbbb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Add Dropdowns to Authoriy Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>catalog_script_client_083bed5f1b4ca0100e7543f28d4bcbbb</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-11-02 10:14:36</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

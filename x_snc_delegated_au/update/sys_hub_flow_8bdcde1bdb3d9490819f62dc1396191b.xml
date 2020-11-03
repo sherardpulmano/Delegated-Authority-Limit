@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-orlando-12-11-2019__patch7-08-19-2020</compiler_build>
+        <compiler_build>glide-orlando-12-11-2019__patch7a-10-02-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>manager_approval_and_email_dal</internal_name>
         <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger➛DALs Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_delegated_au_dals","column_name":"sys_id"},{"name":"Created_1.current.u_requestor_manager.first_name","label":"Trigger➛DALs Record➛Manager➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_requestor_manager.email","label":"Trigger➛DALs Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"2f72e645-b844-40e7-b61e-59f04e63d229.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager","label":"Trigger➛DALs Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_delegated_au_dals","column_name":"u_requestor_manager"},{"name":"Created_1.current","label":"Trigger➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{}},{"name":"a8a6d34c-0a98-492d-94e2-d09837b43585.approval_state","label":"1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0287030c-fc15-472f-b671-320ceead66a9.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.2a1f39b7db21d3000d389875db96193b}}","label":"Lynn Reed","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"c67385df-2bf2-4d20-aa07-f98b3931bbc9.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor.email","label":"Trigger➛DALs Record➛Requestor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_requestor.first_name","label":"Trigger➛DALs Record➛Requestor➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"27e1af25-b4f0-4832-8425-507249b1234e.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.record","label":"2➛DALs Record","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3324a10d-b7e4-4128-a612-3f7710ead048.table_name","label":"2➛DALs Table","reference":"x_snc_delegated_au_dals","reference_display":"DAL Requests","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requestor_manager.name","label":"Trigger➛DALs Record➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <latest_snapshot>f5ac81f71b93d0100e7543f28d4bcbd4</latest_snapshot>
+        <latest_snapshot>09fd69b21b8420100e7543f28d4bcbb1</latest_snapshot>
         <master_snapshot>fe52e653db7d9490819f62dc13961973</master_snapshot>
         <name>Manager Approval and Email DAL</name>
         <natlang/>
@@ -83,10 +83,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-10 17:52:59</sys_created_on>
         <sys_id>041f3ee3dbf11890819f62dc139619f5</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=041f3ee3dbf11890819f62dc139619f5"/>
@@ -173,10 +173,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-10 17:52:59</sys_created_on>
         <sys_id>081f3ee3dbf11890819f62dc139619ee</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=081f3ee3dbf11890819f62dc139619ee"/>
@@ -324,10 +324,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-09 21:08:59</sys_created_on>
         <sys_id>9152a653db7d9490819f62dc139619d0</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9152a653db7d9490819f62dc139619d0"/>
@@ -475,10 +475,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-14 17:22:03</sys_created_on>
         <sys_id>c65ed7f4db8e9c90819f62dc139619aa</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c65ed7f4db8e9c90819f62dc139619aa"/>
@@ -548,10 +548,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-14 17:22:04</sys_created_on>
         <sys_id>ce5ed7f4db8e9c90819f62dc139619d6</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ce5ed7f4db8e9c90819f62dc139619d6"/>
@@ -859,10 +859,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-10 17:52:59</sys_created_on>
         <sys_id>041f3ee3dbf11890819f62dc139619f5</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>c67385df-2bf2-4d20-aa07-f98b3931bbc9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=041f3ee3dbf11890819f62dc139619f5"/>
@@ -949,10 +949,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-10 17:52:59</sys_created_on>
         <sys_id>081f3ee3dbf11890819f62dc139619ee</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>0287030c-fc15-472f-b671-320ceead66a9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=081f3ee3dbf11890819f62dc139619ee"/>
@@ -1100,10 +1100,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-09 21:08:59</sys_created_on>
         <sys_id>9152a653db7d9490819f62dc139619d0</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>a8a6d34c-0a98-492d-94e2-d09837b43585</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9152a653db7d9490819f62dc139619d0"/>
@@ -1251,10 +1251,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-14 17:22:03</sys_created_on>
         <sys_id>c65ed7f4db8e9c90819f62dc139619aa</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>3324a10d-b7e4-4128-a612-3f7710ead048</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c65ed7f4db8e9c90819f62dc139619aa"/>
@@ -1324,10 +1324,10 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-14 17:22:04</sys_created_on>
         <sys_id>ce5ed7f4db8e9c90819f62dc139619d6</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-09-23 17:45:49</sys_updated_on>
+        <sys_updated_on>2020-10-28 00:24:30</sys_updated_on>
         <ui_id>80b2bed6-70e1-40b4-9b3d-e0a8cbea43ea</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ce5ed7f4db8e9c90819f62dc139619d6"/>
@@ -1517,7 +1517,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1b522a53db7d9490819f62dc13961911","name":"plan"}}</plan>
         <plan_id>8bdcde1bdb3d9490819f62dc1396191b</plan_id>
-        <snapshot>f5ac81f71b93d0100e7543f28d4bcbd4</snapshot>
+        <snapshot>09fd69b21b8420100e7543f28d4bcbb1</snapshot>
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-09 21:09:07</sys_created_on>
         <sys_domain>global</sys_domain>

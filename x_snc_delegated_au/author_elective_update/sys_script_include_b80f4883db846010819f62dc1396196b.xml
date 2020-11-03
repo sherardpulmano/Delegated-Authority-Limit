@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_delegated_au.getDelRecords</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>getDelRecords</name>
+        <script><![CDATA[function getDelRecords(){
+	gs.info('svk');
+	var recs = [];
+	var grDelegates = new GlideRecord('x_snc_delegated_au_delegated_authorities');
+	grDelegates.addQuery('u_user', gs.getUserID());
+	grDelegates.query();
+	while(grDelegates.next()){
+		recs.push(grDelegates.u_authority_type.toString());
+	}
+	gs.info('svk '+recs.toString());
+	return 'sys_idIN'+ recs.toString();
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 12:12:46</sys_created_on>
+        <sys_id>b80f4883db846010819f62dc1396196b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>getDelRecords</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sys_script_include_b80f4883db846010819f62dc1396196b</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 12:18:51</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</application>
+        <file_path/>
+        <instance_id>18b08dc7dbc15014413450b6f4961967</instance_id>
+        <instance_name>spulmdemo</instance_name>
+        <name>sys_script_include_b80f4883db846010819f62dc1396196b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_delegated_au.getDelRecords&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;getDelRecords&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function getDelRecords(){
+	gs.info('svk');
+	var recs = [];
+	var grDelegates = new GlideRecord('x_snc_delegated_au_delegated_authorities');
+	grDelegates.addQuery('u_user', gs.getUserID());
+	grDelegates.query();
+	while(grDelegates.next()){
+		recs.push(grDelegates.u_authority_type.toString());
+	}
+	gs.info('svk '+recs.toString());
+	return 'sys_idIN'+ recs.toString();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Vincent.Hou&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-28 12:12:46&lt;/sys_created_on&gt;&lt;sys_id&gt;b80f4883db846010819f62dc1396196b&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;getDelRecords&lt;/sys_name&gt;&lt;sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au"&gt;0dca54621be5d8100e7543f28d4bcbc6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Delegated Authority Limits"&gt;0dca54621be5d8100e7543f28d4bcbc6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b80f4883db846010819f62dc1396196b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Vincent.Hou&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-28 12:18:51&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-564397552</payload_hash>
+        <record_name>getDelRecords</record_name>
+        <reverted_from/>
+        <source>d4f9cb661bcca4d00e7543f28d4bcb45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 12:18:51</sys_created_on>
+        <sys_id>0671d447db846010819f62dc139619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1756f2586dd0000001</sys_recorded_at>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 12:18:51</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8a71d44771846010ce910aec428390e0</update_guid>
+        <update_guid_history>8a71d44771846010ce910aec428390e0:-564397552,79f09447de846010905d60e8e85ae144:1795260993,2cd09047e2846010f7f0a1d69256ce9f:-31140809,64701c07348460106f18411852a84230:1930163895,f8101007fb846010e1e5e0ce8dcb0b4e:1267194905</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 12:20:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>e9d7c139f6914491ad4ac04a345d8599</sys_id>
+        <sys_metadata>b80f4883db846010819f62dc1396196b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getDelRecords</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_scope_delete display_value="">35dbea01bc8a492280e7bc976f108564</sys_scope_delete>
+        <sys_update_name>sys_script_include_b80f4883db846010819f62dc1396196b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b80f4883db846010819f62dc1396196b">0671d447db846010819f62dc139619e1</sys_update_version>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 12:20:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

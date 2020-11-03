@@ -19,6 +19,9 @@
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
+	g_form.setDisplay('your_limit',false);
+	g_form.setDisplay('authorities_requestor_limit_1',false);
+	g_form.setDisplay('authorities_requestor_limit_2',false);
 	g_form.setValue('u_requestor',g_user.userID);
 	var requestor = g_form.getReference('u_requestor',userDetails);
 }
@@ -34,6 +37,7 @@ function userDetails(requestor) {
 	g_form.setValue('u_glide_list_15',requestor.u_reference_1);
 	g_form.setValue('u_business_unit',requestor.u_reference_2);
 	g_form.setReadOnly('u_requestor_limits',true);
+	g_form.setValue('u_requestor_department',requestor.department);
 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -42,15 +46,15 @@ function userDetails(requestor) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fe72794b1b7dd0900e7543f28d4bcbc8</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Populate User</sys_name>
         <sys_overrides/>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>catalog_script_client_fe72794b1b7dd0900e7543f28d4bcbc8</sys_update_name>
-        <sys_updated_by>innovation.factory</sys_updated_by>
-        <sys_updated_on>2020-07-16 17:27:14</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-11-02 10:21:53</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

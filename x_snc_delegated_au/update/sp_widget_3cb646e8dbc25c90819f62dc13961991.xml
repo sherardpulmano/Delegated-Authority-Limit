@@ -4,10 +4,22 @@
         <client_script><![CDATA[function($scope,$rootScope) {
 	var c = this;
 	c.data.total_amount = 0;
+	var test = 0;
 	var totalAmount = 0;
+	var displayAmount = "";
+	var first = true;
 	//Listener to find "field" (read: variable) changes on a catalog item
 	$rootScope.$on("field.change", function(evt, parms) {
-		console.log(parms.field);
+		//console.log("test " + parms.field);
+		//$scope.page.g_form.setValue('total_authority_amount_display_currency', totalAmount);
+
+	/*  NOTE:  This entire process below does not work if you add a new limit and then before submitting the form modify e.g. add $25k -> edit down to $10k
+		For that we would need to have a listener pushing values into an array and then recalculating at the end of the on-change
+		
+		For Demo purposes we are assuming additive line items with no edits.
+	*/
+
+
 		//limit the listener to: if the MRVS or a variable that sits straight on the catalog item changes
 		if(parms.field.variable_name == 'IO:b625a14b1b3dd0900e7543f28d4bcbd1') {						
 			//parse the MRVS
@@ -15,17 +27,34 @@
 			//if the catalog item variable (not a part of the MRVS) is empty, use 0, otherwise, use that value
 			//if the MRVS has data in it
 			if (partnerResources) {
-				//loop through and sum up totals
-				//console.log(partnerResources.length);
-				//for(var i = 0; i < partnerResources.length; i++) {
-					console.log(parms.field.displayValue.replace(/[\$,]/g,''));
+				//get the first MVRS value
+				if (first)
+				{
 					totalAmount = parseFloat(parms.field.displayValue.replace(/[\$,]/g,''));
 					totalAmount += mrvsIteration(partnerResources,'u_requestor_amounts');	
-		
-				//}
+					$scope.page.g_form.setValue('total_authority_request_amount', totalAmount);
+					first = false;
+					displayAmount = castCurrency(totalAmount);
+					$scope.page.g_form.setValue('total_authority_amount_display_currency', displayAmount);
+				
+				}
+
+				//loop through and sum up totals for remaining
+				//console.log(partnerResources.length);
+				for(var i = 0; i < partnerResources.length; i++) {
+					console.log("Loop #: ",i);
+					//console.log(parms.field.displayValue.replace(/[\$,]/g,''));
+					totalAmount = parseFloat(parms.field.displayValue.replace(/[\$,]/g,''));
+					totalAmount += mrvsIteration(partnerResources,'u_requestor_amounts');
+					console.log("End loop: totalamount= " + totalAmount );
+									
+					$scope.page.g_form.setValue('total_authority_request_amount', totalAmount);
+					displayAmount = castCurrency(totalAmount);
+					$scope.page.g_form.setValue('total_authority_amount_display_currency', displayAmount);
+				}
 			}
 			//This is what will print to a particular field if you want to do that instead of printing in HTML
-			$scope.page.g_form.setValue('total_authority_request_amount', totalAmount);
+			//$scope.page.g_form.setValue('total_authority_request_amount', totalAmount);
 		}
 	});
 	
@@ -45,12 +74,20 @@
 				case '06de18e61be5d8100e7543f28d4bcb30':
 					amount = 100000;
 					break;
+				case '2d917966dbe65090819f62dc1396196f':
+					amount = 75000;
 				case '17ce54e61be5d8100e7543f28d4bcbde':
 					amount = 50000;
+					break;
+				case 'c4917966dbe65090819f62dc13961937':
+					amount = 25000;
 					break;
 				case '8abe94e61be5d8100e7543f28d4bcbbc':
 					amount = 10000;
 					break;
+					
+				
+					
 			}
 			total += amount;		
 			
@@ -67,6 +104,16 @@
 			return {};	
 		}
 	}
+	
+	function castCurrency(amount){
+		
+		 var reg = /^[\d,]+$/;
+		 var newText = "$";
+      	 newText += amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   // Insert commas at correct position
+			return newText;
+
+	}
+	
 	
 }]]></client_script>
         <controller_as>c</controller_as>
@@ -90,14 +137,14 @@
         <sys_created_by>innovation.factory</sys_created_by>
         <sys_created_on>2020-07-13 16:20:40</sys_created_on>
         <sys_id>3cb646e8dbc25c90819f62dc13961991</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>Request Amount Total</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sp_widget_3cb646e8dbc25c90819f62dc13961991</sys_update_name>
-        <sys_updated_by>innovation.factory</sys_updated_by>
-        <sys_updated_on>2020-07-17 19:46:39</sys_updated_on>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 17:20:49</sys_updated_on>
         <template><![CDATA[<div><!-- your widget template --></div>]]></template>
     </sp_widget>
 </record_update>

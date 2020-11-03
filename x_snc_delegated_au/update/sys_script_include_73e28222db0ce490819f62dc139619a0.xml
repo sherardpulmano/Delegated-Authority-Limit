@@ -1,63 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_snc_delegated_au.u_DALAjax</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
         <description/>
         <name>u_DALAjax</name>
-        <script><![CDATA[try{
-var u_DALAjax = Class.create();
-u_DALAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-    getManager: function() {
-        var requestedMan = this.getParameter('sysparm_requestor');
-		gs.info('before loop1.0..');
-        var dalUser = new GlideRecord('sys_user');
-        if (dalUser.get('sys_id',requestedMan)) {
-            return dalUser.manager;
-        }
-    },
-    getManagerLim: function() {
-        var requestedManAmount = this.getParameter('sysparm_requestor');
-        var dalUser = new GlideRecord('sys_user');
-		gs.info('before loop..');
-		gs.info('requestedManAmount', +requestedManAmount);
-        if (dalUser.get('sys_id',requestedManAmount)) {
-			gs.info('In Loop..');
-            return dalUser.u_reference_3;
-        }
-    },
-	getManagerAuth: function(){
-		var reqMan = this.getParameter('sysparm_requestor');
-		var auth = this.getParameter('sysparm_auth');
-		
-		gs.info('reqMan' +reqMan +"auth" +auth);
-		var reqManAuth = new GlideRecord('x_snc_delegated_au_child_dal');
-		reqManAuth.addQuery('u_requestor',reqMan);
-		reqManAuth.addQuery('u_authority_type',auth);
-		reqManAuth.query();
-		if(reqManAuth.next()){
-			gs.info('In Loop2.0..');
-			return reqManAuth.limit_amount;
-		}
-	},
-    type: 'u_DALAjax'
-});
-}catch (e){
-	gs.info('warning in script include :'+e);
+        <script><![CDATA[try {
+    var u_DALAjax = Class.create();
+    u_DALAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+        getManager: function() {
+            var requestedMan = this.getParameter('sysparm_requestor');
+            var dalUser = new GlideRecord('sys_user');
+            if (dalUser.get('sys_id', requestedMan)) {
+                return dalUser.manager;
+            }
+        },
+        getManagerLim: function() {
+            var requestedManAmount = this.getParameter('sysparm_requestor');
+            var dalUser = new GlideRecord('sys_user');
+            gs.info('requestedManAmount', +requestedManAmount);
+            if (dalUser.get('sys_id', requestedManAmount)) {
+                return dalUser.u_reference_3;
+            }
+        },
+        getManagerAuth: function() {
+            var obj = {};
+            var reqMan = this.getParameter('sysparm_requestor');
+            var auth = this.getParameter('sysparm_auth');
+            var reqManAuth = new GlideRecord('x_snc_delegated_au_child_dal');
+            reqManAuth.addQuery('u_requestor', reqMan);
+            reqManAuth.addQuery('u_authority_type', auth);
+            reqManAuth.query();
+            if (reqManAuth.next()) {
+                obj.limit_amount = reqManAuth.limit_amount.toString();
+            }
+            var grDelegates = new GlideRecord('x_snc_delegated_au_delegated_authorities');
+            grDelegates.addEncodedQuery('u_user=' + gs.getUserID() + '^u_authority_type=' + auth);
+            grDelegates.query();
+            if (grDelegates.next()) {
+                obj.your_limit = grDelegates.u_limit_amount.toString();
+            }
+            return JSON.stringify(obj);
+        },
+        getLimitDifference: function() {
+            var requestorLimit = this.getParameter('sysparm_requestor');
+            var managerLimit = this.getParameter('sysparm_manager');
+
+            return this.getAmounts(managerLimit) >= this.getAmounts(requestorLimit);
+
+        },
+        getAmounts: function(record) {
+            var grLimit = new GlideRecord('x_snc_delegated_au_dal_amounts');
+            grLimit.get(record);
+            return Number(grLimit.limit_amount);
+        },
+        getMyDirectReports: function() {
+            var answer = new Array();
+            var i = 0;
+            var repManager = gs.getUserID();
+            var reportees = new GlideRecord('sys_user');
+            reportees.addQuery('manager', repManager);
+            reportees.query();
+            while (reportees.next()) {
+                answer[i++] = reportees.sys_id.toString();
+            }
+            return answer;
+        },
+        getAuthorityName: function() {
+            var arr = [];
+            var payload = this.getParameter('sysparm_payload');
+            var gr = new GlideRecord('x_snc_delegated_au_dal_types');
+            gr.addEncodedQuery('sys_idIN' + payload.toString());
+            gr.query();
+            while (gr.next()) {
+                arr.push(gr.limit_types.toString());
+            }
+            return arr.reverse().toString();
+        },
+        getAuthorityLim: function(supervisor, authorityType) {
+
+            var selctlimitValue;
+            var AuthLim = new GlideRecord('x_snc_delegated_au_child_dal');
+            AuthLim.addQuery('u_requestor', supervisor);
+            AuthLim.addQuery('u_authority_type', authorityType);
+            AuthLim.query();
+            if (AuthLim.next()) {
+                selctlimitValue = AuthLim.limit_amount.limit_amount;
+            }
+            return "limit_amount <= " + selctlimitValue;
+        },
+        type: 'u_DALAjax'
+    });
+} catch (e) {
+    gs.info('warning in script include :' + e);
 }]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>Vincent.Hou</sys_created_by>
         <sys_created_on>2020-10-27 07:31:32</sys_created_on>
         <sys_id>73e28222db0ce490819f62dc139619a0</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>u_DALAjax</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>sys_script_include_73e28222db0ce490819f62dc139619a0</sys_update_name>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-10-27 11:14:30</sys_updated_on>
+        <sys_updated_on>2020-11-02 12:43:02</sys_updated_on>
     </sys_script_include>
 </record_update>

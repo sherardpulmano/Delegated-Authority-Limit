@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description/>
+        <event_name>x_snc_delegated_au.DAL.Approve.Notificat</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>DAL.Approve.Notification</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-28 11:48:36</sys_created_on>
+        <sys_id>f15a400fdb446010819f62dc1396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_delegated_au.DAL.Approve.Notificat</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>sysevent_register_f15a400fdb446010819f62dc1396193c</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-28 11:48:36</sys_updated_on>
+        <table/>
+    </sysevent_register>
+</record_update>

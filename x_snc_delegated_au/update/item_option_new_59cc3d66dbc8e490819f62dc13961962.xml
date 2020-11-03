@@ -37,10 +37,10 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>u_managers_authority_type_limit</name>
-        <order>1375</order>
+        <order>1350</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Manager's Authority Type Limit</question_text>
+        <question_text>Supervisor's Limit for this Authority Type</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
@@ -59,14 +59,14 @@
         <sys_created_by>Vincent.Hou</sys_created_by>
         <sys_created_on>2020-10-27 06:53:23</sys_created_on>
         <sys_id>59cc3d66dbc8e490819f62dc13961962</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Manager's Authority Type Limit</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Supervisor's Limit for this Authority Type</sys_name>
         <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
         <sys_update_name>item_option_new_59cc3d66dbc8e490819f62dc13961962</sys_update_name>
         <sys_updated_by>Vincent.Hou</sys_updated_by>
-        <sys_updated_on>2020-10-27 06:53:23</sys_updated_on>
+        <sys_updated_on>2020-10-30 11:20:59</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

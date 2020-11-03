@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Delegated Authorities" max_length="40" name="x_snc_delegated_au_delegated_authorities" sizeclass="28" type="collection">
+        <element attributes="encode_utf8=false" label="Authority Type" max_length="32" name="u_authority_type" reference="x_snc_delegated_au_dal_types" type="reference"/>
+        <element attributes="encode_utf8=false" label="Limit Amount" max_length="32" name="u_limit_amount" reference="x_snc_delegated_au_dal_amounts" reference_qual="javascript: new u_DALAjax().getAuthorityLim(current.u_supervisor,current.u_authority_type);" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="encode_utf8=false" label="Supervisor" max_length="32" name="u_supervisor" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_limit_amount"/>
+        </index>
+        <index name="index2">
+            <element name="u_authority_type"/>
+        </index>
+        <index name="index3">
+            <element name="u_supervisor"/>
+        </index>
+        <index name="index4">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>

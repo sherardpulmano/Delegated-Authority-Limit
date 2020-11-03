@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>100</order>
+        <question display_value="Would you like to set your delegates now?">cd83c51b1b88a0100e7543f28d4bcb6b</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 10:38:50</sys_created_on>
+        <sys_id>6824c15b1b88a0100e7543f28d4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Yes</sys_name>
+        <sys_package display_value="Delegated Authority Limits" source="x_snc_delegated_au">0dca54621be5d8100e7543f28d4bcbc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Delegated Authority Limits">0dca54621be5d8100e7543f28d4bcbc6</sys_scope>
+        <sys_update_name>question_choice_6824c15b1b88a0100e7543f28d4bcb5a</sys_update_name>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 10:38:50</sys_updated_on>
+        <text>Yes</text>
+        <value>yes</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=6824c15b1b88a0100e7543f28d4bcb5a"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>6824c15b1b88a0100e7543f28d4bcb5a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 10:38:50</sys_created_on>
+        <sys_id>7e24055b1b88a0100e7543f28d4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 10:38:50</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>6824c15b1b88a0100e7543f28d4bcb5a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Vincent.Hou</sys_created_by>
+        <sys_created_on>2020-10-29 10:38:50</sys_created_on>
+        <sys_id>3624055b1b88a0100e7543f28d4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Vincent.Hou</sys_updated_by>
+        <sys_updated_on>2020-10-29 10:38:50</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
